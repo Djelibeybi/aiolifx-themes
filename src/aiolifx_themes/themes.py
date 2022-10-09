@@ -2,10 +2,11 @@
 from __future__ import annotations
 
 import asyncio
+from collections.abc import AsyncGenerator, Coroutine, Iterator
 from functools import partial
 import math
 import random
-from typing import AsyncGenerator, Coroutine, Iterator, NamedTuple
+from typing import NamedTuple
 
 from aiolifx.aiolifx import Light
 
