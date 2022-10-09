@@ -1,4 +1,4 @@
-# Welcome to Aiolifx Themes documentation!
+# Welcome to the aiolifx-themes documentation
 
 ```{toctree}
 :caption: Installation & Usage
