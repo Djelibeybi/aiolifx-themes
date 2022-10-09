@@ -1,7 +1,7 @@
 """Utility methods for aiolifx-themes."""
 
 from asyncio import Event
-from typing import Callable
+from typing import Callable, Optional
 
 from aiolifx.aiolifx import Light
 from aiolifx.message import Message
@@ -23,7 +23,7 @@ def is_multizone(device: Light) -> bool:
     return bool(features_map[device.product]["multizone"] is True)
 
 
-def supports_extended_multizone(device: Light) -> bool | None:
+def supports_extended_multizone(device: Light) -> bool:
     """True if device is an extended multizone light."""
     return bool(features_map[device.product]["extended_multizone"] is True)
 
@@ -33,8 +33,8 @@ class AwaitAioLIFX:
 
     def __init__(self) -> None:
         """Initialize the wrapper."""
-        self._device: Light | None = None
-        self._message: Message | None = None
+        self._device: Optional[Light] = None
+        self._message: Optional[Message] = None
         self._event = Event()
 
     def callback(self, device: Light, message: Message) -> None:
