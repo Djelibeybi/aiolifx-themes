@@ -37,7 +37,7 @@ repos:
     rev: v3.0.0
     hooks:
       - id: pyupgrade
-        args: [--py37-plus]
+        args: [--py39-plus]
   - repo: https://github.com/PyCQA/isort
     rev: 5.10.1
     hooks:
@@ -46,6 +46,9 @@ repos:
     rev: 22.10.0
     hooks:
       - id: black
+        args:
+          - --safe
+          - --quiet
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.1
     hooks:
