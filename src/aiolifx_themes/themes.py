@@ -96,9 +96,9 @@ class ThemeColor:
         if hue < 0.0:
             hue += 1.0
         hue *= 360
-
-        saturation = saturation_total / len(colors)
-        brightness = brightness_total / len(colors)
+        hue = round(hue, 4)
+        saturation = round(saturation_total / len(colors), 4)
+        brightness = round(brightness_total / len(colors), 4)
         kelvin = round(kelvin_total / len(colors))
 
         return ThemeColor(hue, saturation, brightness, kelvin)

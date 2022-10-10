@@ -1,4 +1,4 @@
-name: Sync Github labels
+name: Sync GitHub labels
 
 on:
   push:
