@@ -134,7 +134,7 @@ class ThemeColor:
             "kelvin": self.kelvin,
         }
 
-    def as16bit(self) -> tuple[int, int, int, int]:
+    def as_tuple(self) -> tuple[int, int, int, int]:
         """Returns a tuple of 16 bit hue, saturation, brightness and kelvin values.
 
         The hue, saturation and brightness values are converted to 16 bit values
@@ -144,7 +144,7 @@ class ThemeColor:
             int(round(0x10000 * self.hue) / 360) % 0x10000,
             int(round(0xFFFF * self.saturation)),
             int(round(0xFFFF * self.brightness)),
-            self.kelvin,
+            int(self.kelvin),
         )
 
     @property
@@ -202,9 +202,9 @@ class Theme:
         self._colors: list[ThemeColor] = []
 
     @property
-    def colors(self) -> list[ThemeColor]:
+    def colors(self) -> list[tuple[int, int, int, int]]:
         """Return the a list of color dicts for this theme."""
-        return [color for color in self._colors]
+        return [color.as_tuple() for color in self._colors]
 
     def add_hsbk(
         self, hue: float, saturation: float, brightness: float, kelvin: int
@@ -349,7 +349,7 @@ class ThemePainter:
 
             if single_zone(light):
                 tasks.append(
-                    self.paint_single(light, theme.random().as16bit(), duration)
+                    self.paint_single(light, theme.random().as_tuple(), duration)
                 )
 
             if is_multizone(light):
@@ -428,7 +428,7 @@ class MultiZone:
 
         for (start, end), color in self.colors:
             for _ in range(0, end - start + 1):
-                new_colors.append(color.as16bit())
+                new_colors.append(color.as_tuple())
 
         return new_colors
 

@@ -90,24 +90,25 @@ def test_theme() -> None:
 
     test_colors = [
         (0, 1, 1, 0),
-        (100, 1, 1, 0),
-        (200, 1, 1, 0),
-        (300, 1, 1, 0),
+        (90, 1, 1, 0),
+        (180, 1, 1, 0),
+        (270, 1, 1, 0),
     ]
     test_theme = Theme()
     for hsbk in test_colors:
         test_theme.add_hsbk(*hsbk)
     assert len(test_theme) == 4
+    assert test_theme.colors == [
+        (0, 65535, 65535, 0),
+        (16384, 65535, 65535, 0),
+        (32768, 65535, 65535, 0),
+        (49152, 65535, 65535, 0),
+    ]
 
     blank_theme = Theme()
     blank_theme.ensure_color()
     assert len(blank_theme) == 1
-    assert blank_theme.colors[0].as_dict() == {
-        "hue": 0,
-        "saturation": 0,
-        "brightness": 1,
-        "kelvin": 3500,
-    }
+    assert blank_theme.colors[0] == (0, 0, 65535, 3500)
 
 
 def test_theme_library() -> None:
