@@ -25,20 +25,20 @@ def test_theme_color() -> None:
     """Test the ThemeColor methods."""
 
     aqua = ThemeColor(180, 100, 100, 3500)
-    blue = ThemeColor(240, 100, 100, 3500)
+    blue = ThemeColor(240, 1.0, 1.0, 3500)
     coral = ThemeColor(16.114, 68.627, 100.0, 3500)
 
     rgb = MagicMock()
 
-    assert aqua.hsbk == (180, 100, 100, 3500)
+    assert aqua.hsbk == (180, 1, 1, 3500)
     assert aqua < blue
     assert aqua > coral
-    assert hash(aqua) == -5928602007406731917
+    assert hash(aqua) == -4899733196980317225
     assert aqua.cache_key == (
-        ("brightness", 100),
+        ("brightness", 1.0),
         ("hue", 180),
         ("kelvin", 3500),
-        ("saturation", 100),
+        ("saturation", 1.0),
     )
 
     assert aqua == aqua.clone()
@@ -52,16 +52,24 @@ def test_theme_color() -> None:
     with pytest.raises(TypeError):
         assert aqua < rgb
 
-    avg_colors = [
+    avg_kelvin = [
         ThemeColor(0, 0, 25, 2000),
         ThemeColor(0, 0, 25, 3500),
         ThemeColor(0, 0, 50, 6000),
         ThemeColor(0, 0, 75, 9000),
     ]
-    assert ThemeColor.average(avg_colors) == ThemeColor(0, 0, 43.75, 5125)
+    assert ThemeColor.average(avg_kelvin) == ThemeColor(0, 0, 43.75, 5125)
 
-    start_color = ThemeColor(0, 100, 100, 3500)
-    end_color = ThemeColor(230, 100, 100, 3500)
+    avg_colors = [
+        ThemeColor(20, 1.0, 0.25, 0),
+        ThemeColor(40, 1.0, 0.75, 0),
+        ThemeColor(60, 1.0, 0.50, 0),
+        ThemeColor(80, 1.0, 1.0, 0),
+    ]
+    assert ThemeColor.average(avg_colors) == ThemeColor(50, 1.0, 0.625, 3500)
+
+    start_color = ThemeColor(0, 1.0, 1.0, 3500)
+    end_color = ThemeColor(230, 1.0, 1.0, 3500)
     assert start_color.limit_distance_to(end_color) == ThemeColor(90, 100, 100, 3500)
 
 

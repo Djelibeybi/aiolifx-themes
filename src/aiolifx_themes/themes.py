@@ -27,17 +27,22 @@ class ThemeColor:
 
     def __init__(
         self,
-        hue: float | None,
-        saturation: float | None,
-        brightness: float | None,
-        kelvin: int | None,
+        hue: float | None = None,
+        saturation: float | None = None,
+        brightness: float | None = None,
+        kelvin: int | None = None,
     ) -> None:
         """Initialise the theme color object."""
+        if saturation is not None and saturation > 1:
+            saturation = saturation / 100
+        if brightness is not None and brightness > 1:
+            brightness = brightness / 100
+
         self._hsbk = Hsbk(
             hue or 0,
             saturation or 0,
             brightness or 0,
-            kelvin or 3500,
+            kelvin or 0,
         )
 
     @property
@@ -76,6 +81,7 @@ class ThemeColor:
         kelvin_total = 0.0
 
         for color in colors:
+
             hue_x_total += math.sin(color.hue * 2.0 * math.pi / 360)
             hue_y_total += math.cos(color.hue * 2.0 * math.pi / 360)
             saturation_total += color.saturation
@@ -176,8 +182,8 @@ class ThemeColor:
         dist = 360 - raw_dist if raw_dist > 180 else raw_dist
         if abs(dist) > 90:
             h = self.hue + 90 if (other.hue + dist) % 360 == self.hue else self.hue - 90
-            if h < 0:
-                h += 360
+            print(f"H is {h}")
+            h = h + 360 if h < 0 else h
             return ThemeColor(h, self.saturation, self.brightness, self.kelvin)
         else:
             return self
@@ -346,7 +352,7 @@ class ThemePainter:
                     self.paint_single(light, theme.random().as16bit(), duration)
                 )
 
-            elif is_multizone(light):
+            if is_multizone(light):
                 """Paint a linear multizone light"""
                 await AwaitAioLIFX().wait(light.get_extended_color_zones)
                 colors = MultiZone().get_theme_colors(theme, light.zones_count)
