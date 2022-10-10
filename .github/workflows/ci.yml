@@ -11,7 +11,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  lint:
+  codelint:
+    name: Lint source code
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -23,7 +24,7 @@ jobs:
   # Make sure commit messages follow the conventional commits convention:
   # https://www.conventionalcommits.org
   commitlint:
-    name: Lint Commit Messages
+    name: Lint commit messages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -49,11 +50,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - uses: snok/install-poetry@v1
-      - name: Install Dependencies
+      - name: Install dependencies
         run: poetry install
-      - name: Test with Pytest
+      - name: Test with PyTest
         run: poetry run pytest --cov-report=xml
-      - name: Upload coverage to Codecov
+      - name: Upload coverage report to Codecov
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
@@ -79,7 +80,7 @@ jobs:
       # - Create git tag
       # - Create GitHub release
       # - Publish to PyPI
-      - name: Python Semantic Release
+      - name: Run Python Semantic Release
         uses: relekang/python-semantic-release@v7.32.1
         with:
           github_token: ${{ secrets.GH_TOKEN }}
