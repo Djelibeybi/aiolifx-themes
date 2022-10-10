@@ -58,7 +58,8 @@ def test_theme_color() -> None:
         ThemeColor(0, 0, 50, 6000),
         ThemeColor(0, 0, 75, 9000),
     ]
-    assert ThemeColor.average(avg_kelvin) == ThemeColor(0, 0, 43.75, 5125)
+    kelvin_average = ThemeColor.average(avg_kelvin)
+    assert kelvin_average.as_dict() == ThemeColor(0, 0, 43.75, 5125).as_dict()
 
     avg_colors = [
         ThemeColor(20, 1.0, 0.25, 0),
@@ -66,7 +67,8 @@ def test_theme_color() -> None:
         ThemeColor(60, 1.0, 0.50, 0),
         ThemeColor(80, 1.0, 1.0, 0),
     ]
-    assert ThemeColor.average(avg_colors) == ThemeColor(50, 1.0, 0.625, 3500)
+    color_average = ThemeColor.average(avg_colors)
+    assert color_average.as_dict() == ThemeColor(50, 1.0, 0.625, 3500).as_dict()
 
     start_color = ThemeColor(0, 1.0, 1.0, 3500)
     end_color = ThemeColor(230, 1.0, 1.0, 3500)
