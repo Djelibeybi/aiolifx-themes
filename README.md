@@ -44,8 +44,19 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- prettier-ignore-start -->
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-<!-- markdownlint-enable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://www.delfick.com"><img src="https://avatars.githubusercontent.com/u/109301?v=4?s=80" width="80px;" alt="Stephen Moore"/><br /><sub><b>Stephen Moore</b></sub></a><br /><a href="https://github.com/Djelibeybi/aiolifx-themes/commits?author=delfick" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- prettier-ignore-end -->
 
