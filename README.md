@@ -49,9 +49,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- prettier-ignore-end -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind welcome!
 
 ## Credits
+
+This package contains code originally authored by [@Delfick](https://github.com/delfick)
+for [Photons](https://photons.delfick.com).
 
 This package was created with
 [Cookiecutter](https://github.com/audreyr/cookiecutter) and the
