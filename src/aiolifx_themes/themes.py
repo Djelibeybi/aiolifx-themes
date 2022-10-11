@@ -267,10 +267,10 @@ class ThemeLibrary:
         theme = Theme()
         for color in self._palettes.get(theme_name, []):
             theme.add_hsbk(
-                color["hue"],
-                color["saturation"],
-                color["brightness"],
-                int(color["kelvin"]),
+                color.get("hue", 0),
+                color.get("saturation", 0),
+                color.get("brightness", 0),
+                int(color.get("kelvin", 3500)),
             )
         theme.ensure_color()
         return theme
@@ -280,10 +280,10 @@ class ThemeLibrary:
         colors = self._palettes.get(theme_name, [])
         return [
             ThemeColor(
-                color["hue"],
-                color["saturation"],
-                color["brightness"],
-                int(color["kelvin"]),
+                color.get("hue", 0),
+                color.get("saturation", 0),
+                color.get("brightness", 0),
+                int(color.get("kelvin", 3500)),
             )
             for color in colors
         ]
@@ -303,11 +303,11 @@ class ThemePainter:
         self._loop = loop
 
     async def paint_single(
-        self, light: Light, color: tuple[int, int, int, int], duration: int = 0
+        self, light: Light, hsbk: tuple[int, int, int, int], duration: int = 0
     ) -> Coroutine:  # type: ignore
         """Paint a single color onto a normal light."""
         return await AwaitAioLIFX().wait(
-            partial(light.set_color, color, duration=duration)
+            partial(light.set_color, hsbk, duration=duration)
         )
 
     async def paint_multizone(
@@ -340,9 +340,12 @@ class ThemePainter:
                 )
             )
 
-    async def paint(self, theme: Theme, lights: list[Light], duration: int = 0) -> None:
+    async def paint(
+        self, theme: Theme, lights: list[Light], duration: float = 0.25
+    ) -> None:
         """Paint theme using a light-specific painter."""
-        duration = duration * 1000
+
+        duration = int(round(duration * 1000))
 
         tasks = []
         for light in lights:
@@ -542,7 +545,7 @@ LIFX_APP_THEMES = {
         {"hue": 118, "saturation": 1.0, "brightness": 0.5, "kelvin": 3500},
         {"hue": 360, "saturation": 1.0, "brightness": 0.9, "kelvin": 3500},
     ],
-    "independence day": [
+    "independence_day": [
         {"hue": 360, "saturation": 0.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 360, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 240, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
