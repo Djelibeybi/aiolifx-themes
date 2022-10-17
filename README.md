@@ -65,7 +65,7 @@ specification. Contributions of any kind welcome!
 
 ## Credits
 
-This package contains code originally authored by [@Delfick](https://github.com/delfick)
+This package contains code originally authored by [@delfick](https://github.com/delfick)
 for [Photons](https://photons.delfick.com).
 
 This package was created with
