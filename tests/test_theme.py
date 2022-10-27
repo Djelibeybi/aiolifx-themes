@@ -115,7 +115,7 @@ def test_theme_library() -> None:
     """Test the theme librarian."""
     library = ThemeLibrary()
     themes = library.themes
-    assert len(themes) == 24
+    assert len(themes) == 32
 
     for theme_name in ["exciting", "intense", "autumn"]:
         theme_colors = library.get_theme_colors(theme_name)
