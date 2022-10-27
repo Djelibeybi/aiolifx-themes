@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2022-10-27)
+### Feature
+* Add new themes from the LIFX v4.11.5 app ([`7438898`](https://github.com/Djelibeybi/aiolifx-themes/commit/74388987c0d2d2a857d0916a3bcc6d7134a837d4))
+
+### Documentation
+* Fix the spelling of delfick's name ([`cda9994`](https://github.com/Djelibeybi/aiolifx-themes/commit/cda9994c13a808087c60544015102e39488df364))
+* Update .all-contributorsrc [skip ci] ([`71df2ad`](https://github.com/Djelibeybi/aiolifx-themes/commit/71df2ade0f84b4bf7a0216c85a4376c144930864))
+* Update README.md [skip ci] ([`ba44640`](https://github.com/Djelibeybi/aiolifx-themes/commit/ba44640a87c5a7787e48f12c9b62291cf2604024))
+* Add Delfick to the README.md and LICENSE file ([`92344af`](https://github.com/Djelibeybi/aiolifx-themes/commit/92344afc14368482588ec8ee031e915cde18ebae))
+* Add Delfick to the README.md and LICENSE file ([`5c474e9`](https://github.com/Djelibeybi/aiolifx-themes/commit/5c474e9d448225230e8d12e3abd8a099b1b48449))
+
 ## v0.1.2 (2022-10-11)
 ### Fix
 * Make add_hsbk fault tolerant by providing default values ([`e7db7a8`](https://github.com/Djelibeybi/aiolifx-themes/commit/e7db7a87e02ff5d2733e7dd9da42cd1cc79daeb3))
