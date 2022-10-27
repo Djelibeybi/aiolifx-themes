@@ -1,7 +1,8 @@
 """Utility methods for aiolifx-themes."""
 
 from asyncio import Event
-from typing import Callable, Optional
+from collections.abc import Callable
+from typing import Optional, cast
 
 from aiolifx.aiolifx import Light
 from aiolifx.message import Message
@@ -43,9 +44,9 @@ class AwaitAioLIFX:
         self._message = message
         self._event.set()
 
-    async def wait(self, method: Callable) -> Message:  # type: ignore
+    async def wait(self, method: Callable[..., None]) -> Message:
         """Call an aiolifx method and wait for its response or a timeout."""
         self._event.clear()
         method(callb=self.callback)
         await self._event.wait()
-        return self._message
+        return cast(Message, self._message)
