@@ -474,6 +474,14 @@ LIFX_APP_THEMES = {
         {"hue": 56, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 321, "saturation": 0.39, "brightness": 0.78, "kelvin": 3500},
     ],
+    "bias_lighting": [
+        {"hue": 0, "saturation": 0.0, "brightness": 0.9019, "kelvin": 6500}
+    ],
+    "calaveras": [
+        {"brightness": 0.9019, "hue": 300.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.9019, "hue": 270.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.9019, "hue": 240.0, "kelvin": 3500, "saturation": 1.0},
+    ],
     "cheerful": [
         {"hue": 310, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 266, "saturation": 0.87, "brightness": 0.47, "kelvin": 3500},
@@ -545,6 +553,10 @@ LIFX_APP_THEMES = {
         {"hue": 118, "saturation": 1.0, "brightness": 0.5, "kelvin": 3500},
         {"hue": 360, "saturation": 1.0, "brightness": 0.9, "kelvin": 3500},
     ],
+    "hygge": [
+        {"brightness": 0.9019, "hue": 39.0, "kelvin": 3500, "saturation": 0.75},
+        {"brightness": 0.9019, "hue": 34.0, "kelvin": 3500, "saturation": 0.75},
+    ],
     "independence_day": [
         {"hue": 360, "saturation": 0.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 360, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
@@ -555,6 +567,13 @@ LIFX_APP_THEMES = {
         {"hue": 300, "saturation": 1.0, "brightness": 0.87, "kelvin": 3500},
         {"hue": 164, "saturation": 0.99, "brightness": 1.0, "kelvin": 3500},
         {"hue": 248, "saturation": 1.0, "brightness": 0.23, "kelvin": 3500},
+    ],
+    "love": [
+        {"brightness": 0.8298, "hue": 315.0, "kelvin": 3500, "saturation": 0.45},
+        {"brightness": 0.8117, "hue": 349.0, "kelvin": 3500, "saturation": 0.88},
+        {"brightness": 0.9019, "hue": 345.0, "kelvin": 3500, "saturation": 0.76},
+        {"brightness": 0.8839, "hue": 322.0, "kelvin": 3500, "saturation": 0.15},
+        {"brightness": 0.9019, "hue": 307.0, "kelvin": 3500, "saturation": 0.16},
     ],
     "mellow": [
         {"hue": 359, "saturation": 0.31, "brightness": 0.59, "kelvin": 3500},
@@ -579,6 +598,23 @@ LIFX_APP_THEMES = {
         {"hue": 52, "saturation": 0.88, "brightness": 0.97, "kelvin": 3500},
         {"hue": 52, "saturation": 0.88, "brightness": 0.97, "kelvin": 3500},
     ],
+    "proud": [
+        {"brightness": 0.9019, "hue": 32.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.9019, "hue": 271.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.8117, "hue": 349.0, "kelvin": 3500, "saturation": 0.88},
+        {"brightness": 0.8839, "hue": 215.0, "kelvin": 3500, "saturation": 0.85},
+        {"brightness": 0.8117, "hue": 120.0, "kelvin": 3500, "saturation": 0.5},
+        {"brightness": 0.9019, "hue": 303.0, "kelvin": 3500, "saturation": 0.2},
+        {"brightness": 0.9019, "hue": 60.0, "kelvin": 3500, "saturation": 1.0},
+    ],
+    "pumpkin": [
+        {"brightness": 0.8532, "hue": 40.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.4388, "hue": 10.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.4875, "hue": 33.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.8532, "hue": 45.99, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.8532, "hue": 45.99, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.9019, "hue": 40.0, "kelvin": 3500, "saturation": 0.55},
+    ],
     "relaxing": [
         {"hue": 110, "saturation": 0.95, "brightness": 1.0, "kelvin": 3500},
         {"hue": 71, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
@@ -599,6 +635,14 @@ LIFX_APP_THEMES = {
         {"hue": 100, "saturation": 0.26, "brightness": 0.42, "kelvin": 3500},
         {"hue": 132, "saturation": 0.46, "brightness": 0.88, "kelvin": 3500},
         {"hue": 211, "saturation": 0.73, "brightness": 0.97, "kelvin": 3500},
+    ],
+    "shamrock": [
+        {"brightness": 0.9019, "hue": 125.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.6764, "hue": 130.0, "kelvin": 3500, "saturation": 0.85},
+        {"brightness": 0.8117, "hue": 100.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.4509, "hue": 135.0, "kelvin": 3500, "saturation": 0.5},
+        {"brightness": 0.7666, "hue": 110.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.9019, "hue": 120.0, "kelvin": 3500, "saturation": 1.0},
     ],
     "soothing": [
         {"hue": 336, "saturation": 0.18, "brightness": 0.67, "kelvin": 3500},
@@ -633,5 +677,13 @@ LIFX_APP_THEMES = {
         {"hue": 44, "saturation": 0.44, "brightness": 0.65, "kelvin": 3500},
         {"hue": 51, "saturation": 0.85, "brightness": 0.59, "kelvin": 3500},
         {"hue": 0, "saturation": 0.0, "brightness": 0.3, "kelvin": 3500},
+    ],
+    "zombie": [
+        {"brightness": 0.9019, "hue": 155.99, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.9019, "hue": 155.99, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.859, "hue": 270.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.4295, "hue": 147.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.4295, "hue": 281.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.6442, "hue": 138.99, "kelvin": 3500, "saturation": 1.0},
     ],
 }
