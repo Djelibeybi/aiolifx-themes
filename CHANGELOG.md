@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2022-11-05)
+### Fix
+* **deps:** Update dependency typer to ^0.7.0 ([`72385cc`](https://github.com/Djelibeybi/aiolifx-themes/commit/72385ccc1be8954f826a06f6ac4298db610d2493))
+
 ## v0.2.0 (2022-10-27)
 ### Feature
 * Add new themes from the LIFX v4.11.5 app ([`7438898`](https://github.com/Djelibeybi/aiolifx-themes/commit/74388987c0d2d2a857d0916a3bcc6d7134a837d4))
