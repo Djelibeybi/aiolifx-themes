@@ -182,7 +182,6 @@ class ThemeColor:
         dist = 360 - raw_dist if raw_dist > 180 else raw_dist
         if abs(dist) > 90:
             h = self.hue + 90 if (other.hue + dist) % 360 == self.hue else self.hue - 90
-            print(f"H is {h}")
             h = h + 360 if h < 0 else h
             return ThemeColor(h, self.saturation, self.brightness, self.kelvin)
         else:
