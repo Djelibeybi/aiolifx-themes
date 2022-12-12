@@ -41,7 +41,6 @@ jobs:
           - "3.10"
         os:
           - ubuntu-latest
-          - macOS-latest
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
