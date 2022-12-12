@@ -18,7 +18,7 @@ from aiolifx_themes.themes import (
 
 from . import _mocked_beam, _mocked_light, _mocked_z_strip  # type: ignore
 
-THEME_NAMES = [name for name in LIFX_APP_THEMES.keys()]
+THEME_NAMES = [name for name in LIFX_APP_THEMES]
 
 
 def test_theme_color() -> None:
@@ -75,7 +75,7 @@ def test_theme_color() -> None:
     assert start_color.limit_distance_to(end_color) == ThemeColor(90, 100, 100, 3500)
 
 
-def test_theme() -> None:
+def test_theme_methods() -> None:
     """Test the ThemeMethods."""
 
     aqua = ThemeColor(180, 100, 100, 3500)
@@ -115,7 +115,7 @@ def test_theme_library() -> None:
     """Test the theme librarian."""
     library = ThemeLibrary()
     themes = library.themes
-    assert len(themes) == 32
+    assert len(themes) == 41
 
     for theme_name in ["exciting", "intense", "autumn"]:
         theme_colors = library.get_theme_colors(theme_name)
