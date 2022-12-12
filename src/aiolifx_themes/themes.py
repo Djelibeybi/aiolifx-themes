@@ -355,7 +355,7 @@ class ThemePainter:
                 )
 
             if is_multizone(light):
-                """Paint a linear multizone light"""
+                # Paint a linear multizone light
                 await AwaitAioLIFX().wait(light.get_extended_color_zones)
                 colors = MultiZone().get_theme_colors(theme, light.zones_count)
 
@@ -488,6 +488,13 @@ LIFX_APP_THEMES = {
         {"hue": 51, "saturation": 1.0, "brightness": 0.67, "kelvin": 3500},
         {"hue": 282, "saturation": 0.9, "brightness": 0.67, "kelvin": 3500},
     ],
+    "christmas": [
+        {"brightness": 0.902, "hue": 0.0, "kelvin": 3500, "saturation": 0.75},
+        {"brightness": 0.902, "hue": 120.0, "kelvin": 3500, "saturation": 0.75},
+        {"brightness": 0.902, "hue": 15.0, "kelvin": 3500, "saturation": 0.5},
+        {"brightness": 0.902, "hue": 120.0, "kelvin": 6500, "saturation": 1.0},
+        {"brightness": 0.902, "hue": 0.0, "kelvin": 3500, "saturation": 1.0},
+    ],
     "dream": [
         {"hue": 201, "saturation": 0.76, "brightness": 0.23, "kelvin": 3500},
         {"hue": 183, "saturation": 0.75, "brightness": 0.32, "kelvin": 3500},
@@ -513,6 +520,11 @@ LIFX_APP_THEMES = {
         {"hue": 261, "saturation": 0.84, "brightness": 0.58, "kelvin": 3500},
         {"hue": 294, "saturation": 0.78, "brightness": 0.51, "kelvin": 3500},
     ],
+    "evening": [
+        {"hue": 34.0, "saturation": 0.75, "brightness": 0.902, "kelvin": 3500},
+        {"hue": 34.0, "saturation": 0.8, "brightness": 0.902, "kelvin": 3500},
+        {"hue": 39.0, "saturation": 0.75, "brightness": 0.902, "kelvin": 3500},
+    ],
     "exciting": [
         {"hue": 0, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 40, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
@@ -522,12 +534,25 @@ LIFX_APP_THEMES = {
         {"hue": 271, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 294, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
     ],
+    "fantasy": [
+        {"hue": 248.0, "saturation": 1.0, "brightness": 0.2074, "kelvin": 3500},
+        {"hue": 242.0, "saturation": 0.75, "brightness": 0.902, "kelvin": 3500},
+        {"hue": 163.99, "saturation": 0.99, "brightness": 0.902, "kelvin": 3500},
+        {"hue": 300.0, "saturation": 1.0, "brightness": 0.7847, "kelvin": 3500},
+    ],
     "focusing": [
         {"hue": 338, "saturation": 0.38, "brightness": 1.0, "kelvin": 3500},
         {"hue": 42, "saturation": 0.36, "brightness": 1.0, "kelvin": 3500},
         {"hue": 52, "saturation": 0.21, "brightness": 1.0, "kelvin": 3500},
         {"hue": 0, "saturation": 0.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 0, "saturation": 0.0, "brightness": 1.0, "kelvin": 3500},
+    ],
+    "gentle": [
+        {"hue": 338.0, "saturation": 0.38, "brightness": 0.902, "kelvin": 3500},
+        {"hue": 0.0, "saturation": 0.0, "brightness": 0.902, "kelvin": 9000},
+        {"hue": 52.0, "saturation": 0.21, "brightness": 0.902, "kelvin": 3500},
+        {"hue": 0.0, "saturation": 0.0, "brightness": 0.902, "kelvin": 2500},
+        {"hue": 42.0, "saturation": 0.36, "brightness": 0.902, "kelvin": 3500},
     ],
     "halloween": [
         {"hue": 31, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
@@ -538,12 +563,11 @@ LIFX_APP_THEMES = {
         {"hue": 34, "saturation": 1.0, "brightness": 0.7, "kelvin": 3500},
     ],
     "hanukkah": [
-        {"hue": 213, "saturation": 0.52, "brightness": 1.0, "kelvin": 3500},
-        {"hue": 219, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
-        {"hue": 0, "saturation": 0.0, "brightness": 0.32, "kelvin": 3500},
-        {"hue": 199, "saturation": 1.0, "brightness": 0.34, "kelvin": 3500},
-        {"hue": 232, "saturation": 1.0, "brightness": 0.35, "kelvin": 3500},
-        {"hue": 225, "saturation": 0.25, "brightness": 0.13, "kelvin": 3500},
+        {"brightness": 0.902, "hue": 0.0, "kelvin": 6500, "saturation": 0.0},
+        {"brightness": 0.902, "hue": 240.0, "kelvin": 3500, "saturation": 0.25},
+        {"brightness": 0.902, "hue": 240.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.902, "hue": 240.0, "kelvin": 3500, "saturation": 0.5},
+        {"brightness": 0.902, "hue": 240.0, "kelvin": 3500, "saturation": 0.75},
     ],
     "holly": [
         {"hue": 117, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
@@ -556,7 +580,7 @@ LIFX_APP_THEMES = {
         {"brightness": 0.9019, "hue": 39.0, "kelvin": 3500, "saturation": 0.75},
         {"brightness": 0.9019, "hue": 34.0, "kelvin": 3500, "saturation": 0.75},
     ],
-    "independence_day": [
+    "independence": [
         {"hue": 360, "saturation": 0.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 360, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 240, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
@@ -574,12 +598,23 @@ LIFX_APP_THEMES = {
         {"brightness": 0.8839, "hue": 322.0, "kelvin": 3500, "saturation": 0.15},
         {"brightness": 0.9019, "hue": 307.0, "kelvin": 3500, "saturation": 0.16},
     ],
+    "kwanzaa": [
+        {"brightness": 0.902, "hue": 120.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.902, "hue": 0.0, "kelvin": 3500, "saturation": 1.0},
+    ],
     "mellow": [
         {"hue": 359, "saturation": 0.31, "brightness": 0.59, "kelvin": 3500},
         {"hue": 315, "saturation": 0.24, "brightness": 0.82, "kelvin": 3500},
         {"hue": 241, "saturation": 1.0, "brightness": 0.4, "kelvin": 3500},
         {"hue": 256, "saturation": 0.36, "brightness": 0.5, "kelvin": 3500},
         {"hue": 79, "saturation": 0.05, "brightness": 0.4, "kelvin": 3500},
+    ],
+    "party": [
+        {"brightness": 0.902, "hue": 300.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.902, "hue": 265.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.902, "hue": 240.0, "kelvin": 3500, "saturation": 1.0},
+        {"brightness": 0.902, "hue": 240.0, "kelvin": 3500, "saturation": 0.75},
+        {"brightness": 0.902, "hue": 214.0, "kelvin": 3500, "saturation": 0.85},
     ],
     "peaceful": [
         {"hue": 198, "saturation": 0.48, "brightness": 0.11, "kelvin": 3500},
@@ -620,6 +655,13 @@ LIFX_APP_THEMES = {
         {"hue": 123, "saturation": 0.85, "brightness": 0.33, "kelvin": 3500},
         {"hue": 120, "saturation": 0.5, "brightness": 0.1, "kelvin": 3500},
     ],
+    "romance": [
+        {"brightness": 0.8298, "hue": 315.0, "kelvin": 3500, "saturation": 0.45},
+        {"brightness": 0.8117, "hue": 349.0, "kelvin": 3500, "saturation": 0.88},
+        {"brightness": 0.9019, "hue": 345.0, "kelvin": 3500, "saturation": 0.76},
+        {"brightness": 0.8839, "hue": 322.0, "kelvin": 3500, "saturation": 0.15},
+        {"brightness": 0.9019, "hue": 307.0, "kelvin": 3500, "saturation": 0.16},
+    ],
     "santa": [
         {"hue": 0, "saturation": 1.0, "brightness": 1.0, "kelvin": 3500},
         {"hue": 351, "saturation": 0.05, "brightness": 1.0, "kelvin": 3500},
@@ -650,6 +692,12 @@ LIFX_APP_THEMES = {
         {"hue": 302, "saturation": 0.69, "brightness": 1.0, "kelvin": 3500},
         {"hue": 330, "saturation": 0.45, "brightness": 0.58, "kelvin": 3500},
     ],
+    "spacey": [
+        {"hue": 120.0, "saturation": 0.5, "brightness": 0.0902, "kelvin": 3500},
+        {"hue": 70.99, "saturation": 1.0, "brightness": 0.902, "kelvin": 3500},
+        {"hue": 110.0, "saturation": 0.95, "brightness": 0.902, "kelvin": 3500},
+        {"hue": 123.0, "saturation": 0.85, "brightness": 0.2976, "kelvin": 3500},
+    ],
     "sports": [
         {"hue": 59, "saturation": 0.81, "brightness": 0.96, "kelvin": 3500},
         {"hue": 120, "saturation": 1.0, "brightness": 0.96, "kelvin": 3500},
@@ -660,6 +708,13 @@ LIFX_APP_THEMES = {
         {"hue": 299.0, "saturation": 1.0, "brightness": 0.5, "kelvin": 3500},
         {"hue": 49.0, "saturation": 1.0, "brightness": 0.5, "kelvin": 3500},
         {"hue": 198.0, "saturation": 1.0, "brightness": 0.5, "kelvin": 3500},
+    ],
+    "thanksgiving": [
+        {"hue": 50.0, "saturation": 0.81, "brightness": 0.7757, "kelvin": 3500},
+        {"hue": 35.0, "saturation": 0.81, "brightness": 0.7757, "kelvin": 3500},
+        {"hue": 30.0, "saturation": 1.0, "brightness": 0.902, "kelvin": 3500},
+        {"hue": 35.0, "saturation": 0.85, "brightness": 0.5863, "kelvin": 3500},
+        {"hue": 15.0, "saturation": 0.44, "brightness": 0.5863, "kelvin": 3500},
     ],
     "tranquil": [
         {"hue": 0, "saturation": 0.0, "brightness": 0.0, "kelvin": 3500},
