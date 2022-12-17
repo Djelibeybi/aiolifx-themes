@@ -1,8 +1,10 @@
-# Aiolifx Themes
+# aiolifx-themes
+
+<!-- markdownlint-disable MD033 -->
 
 <p align="center">
   <a href="https://github.com/Djelibeybi/aiolifx-themes/actions?query=workflow%3ACI">
-    <img src="https://img.shields.io/github/workflow/status/Djelibeybi/aiolifx-themes/CI/main?label=CI&logo=github&style=flat-square" alt="CI Status" >
+    <img src="https://img.shields.io/github/actions/workflow/status/Djelibeybi/aiolifx-themes/ci.yml?branch=main&logo=github&style=flat-square" alt="CI Status" >
   </a>
   <a href="https://aiolifx-themes.readthedocs.io">
     <img src="https://img.shields.io/readthedocs/aiolifx-themes.svg?logo=read-the-docs&logoColor=fff&style=flat-square" alt="Documentation Status">
