@@ -18,6 +18,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Djelibeybi",
+      "name": "Avi Miller",
+      "avatar_url": "https://avatars.githubusercontent.com/u/103232?v=4",
+      "profile": "https://omg.dje.li",
+      "contributions": [
+        "code",
+        "doc",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
