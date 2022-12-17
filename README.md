@@ -50,6 +50,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center"><a href="https://www.delfick.com"><img src="https://avatars.githubusercontent.com/u/109301?v=4?s=80" width="80px;" alt="Stephen Moore"/><br /><sub><b>Stephen Moore</b></sub></a><br /><a href="https://github.com/Djelibeybi/aiolifx-themes/commits?author=delfick" title="Code">💻</a></td>
+      <td align="center"><a href="https://omg.dje.li"><img src="https://avatars.githubusercontent.com/u/103232?v=4?s=80" width="80px;" alt="Avi Miller"/><br /><sub><b>Avi Miller</b></sub></a><br /><a href="https://github.com/Djelibeybi/aiolifx-themes/commits?author=Djelibeybi" title="Code">💻</a> <a href="https://github.com/Djelibeybi/aiolifx-themes/commits?author=Djelibeybi" title="Documentation">📖</a> <a href="#maintenance-Djelibeybi" title="Maintenance">🚧</a></td>
     </tr>
   </tbody>
 </table>
