@@ -2,13 +2,14 @@
 from __future__ import annotations
 
 import asyncio
-from collections.abc import AsyncGenerator, Coroutine, Iterator
+from collections.abc import Coroutine, Iterator
 from functools import partial
 import math
 import random
-from typing import NamedTuple
+from typing import Any, NamedTuple
 
 from aiolifx.aiolifx import Light
+from aiolifx.message import Message
 
 from .util import AwaitAioLIFX, is_multizone, single_zone, supports_extended_multizone
 
@@ -240,7 +241,7 @@ class Theme:
         new_theme = Theme()
         colors = list(self._colors)
         random.shuffle(colors)
-        new_theme._colors = colors
+        new_theme._colors = colors  # pylint: disable=protected-access
         return new_theme
 
     def ensure_color(self) -> None:
@@ -259,7 +260,7 @@ class ThemeLibrary:
     @property
     def themes(self) -> list[str]:
         """Returns a list of names of the themes in the library."""
-        return [name for name in self._palettes.keys()]
+        return [name for name in self._palettes]
 
     def get_theme(self, theme_name: str) -> Theme:
         """Returns the named theme from the library or a blank theme."""
@@ -322,22 +323,27 @@ class ThemePainter:
             )
         )
 
-    async def paint_legacy_multizone(
+    def paint_legacy_multizone(
         self, light: Light, colors: list[tuple[int, int, int, int]], duration: int = 0
-    ) -> AsyncGenerator[Coroutine, None]:  # type: ignore
+    ) -> list[Coroutine[Any, Any, Message]]:
         """Paint each zone individually on a legacy multizone light."""
+        coros = []
         for index, color in enumerate(colors):
             apply = 1 if (index == len(colors) - 1) else 0
-            yield AwaitAioLIFX().wait(
-                partial(
-                    light.set_color_zones,
-                    index,
-                    index,
-                    color,
-                    apply=apply,
-                    duration=int(duration),
+            coros.append(
+                AwaitAioLIFX().wait(
+                    partial(
+                        light.set_color_zones,
+                        index,
+                        index,
+                        color,
+                        apply=apply,
+                        duration=int(duration),
+                    )
                 )
             )
+
+        return list(coros)
 
     async def paint(
         self, theme: Theme, lights: list[Light], duration: float = 0.25
@@ -367,10 +373,10 @@ class ThemePainter:
                     tasks.append(self.paint_multizone(light, colors, duration))
                 else:
                     # send multiple set_color_zones messages to paint the theme.
-                    async for task in self.paint_legacy_multizone(
+                    for coro in self.paint_legacy_multizone(
                         light, colors, duration=duration
                     ):
-                        tasks.append(task)
+                        tasks.append(coro)
 
         await asyncio.gather(*tasks, return_exceptions=True)
 
@@ -708,6 +714,12 @@ LIFX_APP_THEMES = {
         {"hue": 299.0, "saturation": 1.0, "brightness": 0.5, "kelvin": 3500},
         {"hue": 49.0, "saturation": 1.0, "brightness": 0.5, "kelvin": 3500},
         {"hue": 198.0, "saturation": 1.0, "brightness": 0.5, "kelvin": 3500},
+    ],
+    "stardust": [
+        {"hue": 0.0, "saturation": 0.0, "brightness": 0.902, "kelvin": 6500},
+        {"hue": 209.0, "saturation": 0.5, "brightness": 0.902, "kelvin": 3500},
+        {"hue": 0.0, "saturation": 0.0, "brightness": 0.902, "kelvin": 6497},
+        {"hue": 260.0, "saturation": 0.3, "brightness": 0.902, "kelvin": 3500},
     ],
     "thanksgiving": [
         {"hue": 50.0, "saturation": 0.81, "brightness": 0.7757, "kelvin": 3500},

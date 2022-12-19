@@ -115,9 +115,9 @@ def test_theme_library() -> None:
     """Test the theme librarian."""
     library = ThemeLibrary()
     themes = library.themes
-    assert len(themes) == 41
+    assert len(themes) == 42
 
-    for theme_name in ["exciting", "intense", "autumn"]:
+    for theme_name in ["exciting", "intense", "autumn", "stardust"]:
         theme_colors = library.get_theme_colors(theme_name)
         assert [color.as_dict() for color in theme_colors] == LIFX_APP_THEMES[
             theme_name
@@ -153,8 +153,18 @@ async def test_theme_painter() -> None:
     for light in lights:
 
         if light.product == 38:
+            # only send a single set_extended_color_zone packet
             assert len(light.set_extended_color_zones.calls) == 1
         elif light.product == 31:
+            # send a packet for each zone
             assert len(light.set_color_zones.calls) == light.zones_count
+            # packets in the sequence have apply=0 so they accumulate
+            assert (
+                light.set_color_zones.calls[round(light.zones_count / 2)][1]["apply"]
+                == 0
+            )
+            # the last packet has apply=1 set to trigger the paint
+            assert light.set_color_zones.calls[light.zones_count - 1][1]["apply"] == 1
         elif light.product == 22:
+            # single zone bulbs get one packet too
             assert len(light.set_color.calls) == 1
