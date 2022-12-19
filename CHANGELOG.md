@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2022-12-19)
+### Feature
+* Add new Stardust theme from LIFX app v4.13.0 ([`126cdc1`](https://github.com/Djelibeybi/aiolifx-themes/commit/126cdc18c88b73831d65d28267290923cf1101b9))
+
+### Documentation
+* Update .all-contributorsrc [skip ci] ([`2f622ed`](https://github.com/Djelibeybi/aiolifx-themes/commit/2f622ed5a1fc357374acf96bcc552f7661c7fcc1))
+* Update README.md [skip ci] ([`90d415c`](https://github.com/Djelibeybi/aiolifx-themes/commit/90d415c25de99453c637bb7a0595610768ec0caf))
+* Update badge URL in README.md ([`3f8de0e`](https://github.com/Djelibeybi/aiolifx-themes/commit/3f8de0eb1567252a553ed0ea59065402ad7c59f5))
+
 ## v0.3.0 (2022-12-12)
 ### Feature
 * Add new themes from LIFX app v4.13.0 ([`7933391`](https://github.com/Djelibeybi/aiolifx-themes/commit/793339158df71ff936c092c5ab2fd360d9b7b2f3))
