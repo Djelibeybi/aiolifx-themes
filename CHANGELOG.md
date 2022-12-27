@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.1 (2022-12-27)
+### Fix
+* Setuptools vulnerable to Regular Expression Denial of Service (ReDoS) ([`f445b3d`](https://github.com/Djelibeybi/aiolifx-themes/commit/f445b3d5bb04980a8b715a47fa7b7999b86bdfe9))
+
 ## v0.4.0 (2022-12-19)
 ### Feature
 * Add new Stardust theme from LIFX app v4.13.0 ([`126cdc1`](https://github.com/Djelibeybi/aiolifx-themes/commit/126cdc18c88b73831d65d28267290923cf1101b9))
