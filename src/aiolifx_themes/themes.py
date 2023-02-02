@@ -82,7 +82,6 @@ class ThemeColor:
         kelvin_total = 0.0
 
         for color in colors:
-
             hue_x_total += math.sin(color.hue * 2.0 * math.pi / 360)
             hue_y_total += math.cos(color.hue * 2.0 * math.pi / 360)
             saturation_total += color.saturation
@@ -354,7 +353,6 @@ class ThemePainter:
 
         tasks = []
         for light in lights:
-
             if single_zone(light):
                 tasks.append(
                     self.paint_single(light, theme.random().as_tuple(), duration)

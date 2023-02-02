@@ -151,7 +151,6 @@ async def test_theme_painter() -> None:
     await painter.paint(theme, lights)
 
     for light in lights:
-
         if light.product == 38:
             # only send a single set_extended_color_zone packet
             assert len(light.set_extended_color_zones.calls) == 1
