@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.2 (2023-03-01)
+### Fix
+* **deps:** Update dependency myst-parser to ^0.19 ([`2798e95`](https://github.com/Djelibeybi/aiolifx-themes/commit/2798e95ccf3c2f6a79c106a7a1d62948b6378567))
+
 ## v0.4.1 (2022-12-27)
 ### Fix
 * Setuptools vulnerable to Regular Expression Denial of Service (ReDoS) ([`f445b3d`](https://github.com/Djelibeybi/aiolifx-themes/commit/f445b3d5bb04980a8b715a47fa7b7999b86bdfe9))
