@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.3 (2023-03-07)
+### Fix
+* **deps:** Update dependency myst-parser to v1 ([`9546f7e`](https://github.com/Djelibeybi/aiolifx-themes/commit/9546f7eea92b3a63cd19fb9526f11d836d4d2c84))
+
 ## v0.4.2 (2023-03-01)
 ### Fix
 * **deps:** Update dependency myst-parser to ^0.19 ([`2798e95`](https://github.com/Djelibeybi/aiolifx-themes/commit/2798e95ccf3c2f6a79c106a7a1d62948b6378567))
