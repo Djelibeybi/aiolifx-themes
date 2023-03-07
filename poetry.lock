@@ -561,14 +561,14 @@ files = [
 
 [[package]]
 name = "myst-parser"
-version = "0.19.0"
+version = "1.0.0"
 description = "An extended [CommonMark](https://spec.commonmark.org/) compliant parser,"
 category = "main"
 optional = true
 python-versions = ">=3.7"
 files = [
-    {file = "myst-parser-0.19.0.tar.gz", hash = "sha256:5a278c02015ce89f282dfde2a6e43d0924d957ab57d83555fce1645448810577"},
-    {file = "myst_parser-0.19.0-py3-none-any.whl", hash = "sha256:a71ef265d01ddc905590c3c840b8a9f38b5b48d6d2c43be3b85ad130f5fd896d"},
+    {file = "myst-parser-1.0.0.tar.gz", hash = "sha256:502845659313099542bd38a2ae62f01360e7dd4b1310f025dd014dfc0439cdae"},
+    {file = "myst_parser-1.0.0-py3-none-any.whl", hash = "sha256:69fb40a586c6fa68995e6521ac0a525793935db7e724ca9bac1d33be51be9a4c"},
 ]
 
 [package.dependencies]
@@ -1155,4 +1155,4 @@ docs = ["Sphinx", "myst-parser", "sphinx-rtd-theme"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "77e25252d52134af3f987eda25dec64888b589242369514a30adaff4f887b1b2"
+content-hash = "ce096c46bdcf90b24ee4ede6babf096bb03ae92cea9efb6ba6a7131b687fd168"
