@@ -2,17 +2,18 @@
 
 [[package]]
 name = "aiolifx"
-version = "0.8.9"
+version = "0.8.10"
 description = "API for local communication with LIFX devices over a LAN with asyncio."
 category = "main"
 optional = false
 python-versions = ">=3.4"
 files = [
-    {file = "aiolifx-0.8.9-py3-none-any.whl", hash = "sha256:26e0b7d13818a6ff258315e7710e6e385bdb0a6ec307d81938f9d40fff81538e"},
-    {file = "aiolifx-0.8.9.tar.gz", hash = "sha256:221f3674d0d9777b1b1878710d3b732505e48e7e8f81e7dbd12db882db6238ef"},
+    {file = "aiolifx-0.8.10-py3-none-any.whl", hash = "sha256:46fd9482c80c757690698c66c0ffc51e39c9e357d9d784fb0360ce3796863052"},
+    {file = "aiolifx-0.8.10.tar.gz", hash = "sha256:36234a16b5b1a469306dbeed1440c3e6367a1135b6d01048aab7630ac2ff0e46"},
 ]
 
 [package.dependencies]
+async-timeout = ">=3.0.1"
 bitstring = "*"
 ifaddr = "*"
 
@@ -32,7 +33,7 @@ files = [
 name = "async-timeout"
 version = "4.0.2"
 description = "Timeout context manager for asyncio programs"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 files = [
