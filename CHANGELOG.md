@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.9 (2023-09-14)
+
+### Fix
+
+* **deps:** Update dependency sphinx to v7.2.6 ([`7a0db85`](https://github.com/Djelibeybi/aiolifx-themes/commit/7a0db85d32208bde3e596f04919fdeb5ea2c8268))
+
 ## v0.4.8 (2023-08-31)
 
 ### Fix
