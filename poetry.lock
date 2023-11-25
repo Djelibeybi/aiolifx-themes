@@ -2,13 +2,13 @@
 
 [[package]]
 name = "aiolifx"
-version = "0.9.0"
+version = "1.0.0"
 description = "API for local communication with LIFX devices over a LAN with asyncio."
 optional = false
 python-versions = ">=3.4"
 files = [
-    {file = "aiolifx-0.9.0-py3-none-any.whl", hash = "sha256:4e3c4a4dc651d8a0728a2de2dee0e47665ac329b40ae1e510d7040e0bef9041b"},
-    {file = "aiolifx-0.9.0.tar.gz", hash = "sha256:a0af0887ad84170bb75f93cd5452c7f9471ee9906cec83177ade7f0c7c5f7793"},
+    {file = "aiolifx-1.0.0-py3-none-any.whl", hash = "sha256:0b0b0b9c00d1176782983c677d195080c664b3ce873079078e89fe361c07d040"},
+    {file = "aiolifx-1.0.0.tar.gz", hash = "sha256:da5582d9e4d887f617d0f9f75b5d6e56aa93db272c6bdf77b22883476055e2a5"},
 ]
 
 [package.dependencies]
@@ -1240,4 +1240,4 @@ docs = ["Sphinx", "myst-parser", "sphinx-rtd-theme"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "1748da98e5f2ad7934d6fb4ff6d1950f7a96ff9e5aaa25be066e4038ef393c5c"
+content-hash = "7acf187ca5771ad1831e700ef87894e27df9f824a062c710e3a2f18db2b12b68"
