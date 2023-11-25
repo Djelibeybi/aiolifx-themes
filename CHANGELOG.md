@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.10 (2023-11-25)
+
+### Fix
+
+* **deps:** Update dependency aiolifx to v1 ([`e0ca95c`](https://github.com/Djelibeybi/aiolifx-themes/commit/e0ca95ca1778d314994f8117db6ee1849aed79ee))
+
 ## v0.4.9 (2023-09-14)
 
 ### Fix
