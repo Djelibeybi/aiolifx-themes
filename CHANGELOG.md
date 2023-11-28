@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.11 (2023-11-28)
+
+### Fix
+
+* **deps:** Update dependency sphinx-rtd-theme to v2 ([`ab078f6`](https://github.com/Djelibeybi/aiolifx-themes/commit/ab078f6f4ae8222ac4340100581bb46977bf1d71))
+
 ## v0.4.10 (2023-11-25)
 
 ### Fix
