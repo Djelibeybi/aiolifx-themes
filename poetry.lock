@@ -2,13 +2,13 @@
 
 [[package]]
 name = "aiolifx"
-version = "1.0.0"
+version = "1.0.1"
 description = "API for local communication with LIFX devices over a LAN with asyncio."
 optional = false
 python-versions = ">=3.4"
 files = [
-    {file = "aiolifx-1.0.0-py3-none-any.whl", hash = "sha256:0b0b0b9c00d1176782983c677d195080c664b3ce873079078e89fe361c07d040"},
-    {file = "aiolifx-1.0.0.tar.gz", hash = "sha256:da5582d9e4d887f617d0f9f75b5d6e56aa93db272c6bdf77b22883476055e2a5"},
+    {file = "aiolifx-1.0.1-py3-none-any.whl", hash = "sha256:29629a1a98baf636728862af69afece4ad97844573e9770dc272d9b1940fef13"},
+    {file = "aiolifx-1.0.1.tar.gz", hash = "sha256:af8d8cedaa8a28b746811682ca6e383359efbb4bd318aeeb89c069fc0b1b1519"},
 ]
 
 [package.dependencies]
@@ -464,7 +464,7 @@ docs = ["Sphinx (>=4.1.2,<5.0.0)", "furo (>=2021.8.17-beta.43,<2022.0.0)", "myst
 name = "jinja2"
 version = "3.1.3"
 description = "A very fast and expressive template engine."
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "Jinja2-3.1.3-py3-none-any.whl", hash = "sha256:7d6d50dd97d52cbc355597bd845fabfbac3f551e1f99619e39a35ce8c370b5fa"},
@@ -505,7 +505,7 @@ testing = ["coverage", "pytest", "pytest-cov", "pytest-regressions"]
 name = "markupsafe"
 version = "2.1.3"
 description = "Safely add untrusted strings to HTML/XML markup."
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "MarkupSafe-2.1.3-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:cd0f502fe016460680cd20aaa5a76d241d6f35a1c3350c474bac1273803893fa"},
