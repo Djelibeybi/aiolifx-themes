@@ -1,4 +1,5 @@
 """Collection of colors that can be painted onto devices."""
+
 from __future__ import annotations
 
 import asyncio
