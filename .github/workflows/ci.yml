@@ -48,7 +48,6 @@ jobs:
       - name: Upload coverage report to Codecov
         uses: codecov/codecov-action@v4
 
-
   release:
     runs-on: ubuntu-latest
     environment: release
