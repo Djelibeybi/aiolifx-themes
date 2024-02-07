@@ -31,7 +31,11 @@ jobs:
           - "3.12"
         os:
           - ubuntu-latest
+          - macos-latest
     runs-on: ${{ matrix.os }}
+    env:
+      OS: ${{ matrix.os }}
+      PYTHON_VERSION: ${{ matrix.python-version }}
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -47,6 +51,10 @@ jobs:
         shell: bash
       - name: Upload coverage report to Codecov
         uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          env_vars: OS, PYTHON_VERSION
+          verbose: true
 
   release:
     runs-on: ubuntu-latest
