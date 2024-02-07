@@ -11,16 +11,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  codelint:
-    name: Lint source code
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.9"
-      - uses: pre-commit/action@v3.0.1
-
   # Make sure commit messages follow the conventional commits convention:
   # https://www.conventionalcommits.org
   commitlint:
@@ -37,8 +27,8 @@ jobs:
       fail-fast: false
       matrix:
         python-version:
-          - "3.9"
-          - "3.10"
+          - "3.11"
+          - "3.12"
         os:
           - ubuntu-latest
     runs-on: ${{ matrix.os }}
@@ -48,39 +38,49 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - uses: snok/install-poetry@v1
+      - uses: snok/install-poetry@v1.3.4
       - name: Install dependencies
         run: poetry install
+        shell: bash
       - name: Test with PyTest
         run: poetry run pytest --cov-report=xml
+        shell: bash
       - name: Upload coverage report to Codecov
         uses: codecov/codecov-action@v4
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+
 
   release:
     runs-on: ubuntu-latest
     environment: release
     if: github.ref == 'refs/heads/main'
+    concurrency: release
+    permissions:
+      id-token: write
+      contents: write
     needs:
       - test
-      - codelint
       - commitlint
 
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
 
-      # Run semantic release:
-      # - Update CHANGELOG.md
-      # - Update version in code
-      # - Create git tag
-      # - Create GitHub release
-      # - Publish to PyPI
-      - name: Run Python Semantic Release
-        uses: relekang/python-semantic-release@v9.0.1
+      # This action uses a custom version of Python Semantic Release v8
+      - name: Python Semantic Release
+        id: release
+        uses: Djelibeybi/python-semantic-release@v8-py311
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          pypi_token: ${{ secrets.PYPI_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        # NOTE: DO NOT wrap the conditional in ${{ }} as it will always evaluate to true.
+        # See https://github.com/actions/runner/issues/1173
+        if: steps.release.outputs.released == 'true'
+
+      - name: Publish package distributions to GitHub Releases
+        uses: python-semantic-release/upload-to-gh-release@main
+        if: steps.release.outputs.released == 'true'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
