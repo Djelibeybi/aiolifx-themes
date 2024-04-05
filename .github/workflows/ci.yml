@@ -57,7 +57,9 @@ jobs:
 
   release:
     runs-on: ubuntu-latest
-    environment: release
+    environment:
+        name: release
+        url: https://pypi.org/project/aiolifx-themes/
     if: github.ref == 'refs/heads/main'
     concurrency: release
     permissions:
@@ -94,6 +96,9 @@ jobs:
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         if: steps.release.outputs.released == 'true'
+        with:
+          verbose: true
+          print-hash: true
 
       - name: Publish package distributions to GitHub Releases
         uses: python-semantic-release/upload-to-gh-release@main
