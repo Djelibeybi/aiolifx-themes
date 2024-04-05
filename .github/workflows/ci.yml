@@ -73,7 +73,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Python Semantic Release
+      - name: Set up Python
+        uses: actions/setup-python@v5
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1.3.4
+
+      - name: Install dependencies using Poetry
+        run: poetry install
+        shell: bash
+
+      - name: Run Python Semantic Release
         id: release
         uses: python-semantic-release/python-semantic-release@v8.3.0
         with:
