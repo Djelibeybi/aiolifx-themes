@@ -2,6 +2,15 @@
 
 
 
+## v0.4.14 (2024-04-05)
+
+### Fix
+
+* fix: set minimum Python version to 3.12
+
+Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`6e75f6d`](https://github.com/Djelibeybi/aiolifx-themes/commit/6e75f6d31f9f16f9bc5a94f3a0e807899c547ab5))
+
+
 ## v0.4.13 (2024-04-05)
 
 ### Chore
