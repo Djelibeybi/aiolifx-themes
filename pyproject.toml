@@ -23,7 +23,7 @@ packages = [
 "Changelog" = "https://github.com/Djelibeybi/aiolifx-themes/blob/main/CHANGELOG.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 aiolifx = "^1.0.0"
 typer = {extras = ["all"], version = "^0.12.0"}
 
