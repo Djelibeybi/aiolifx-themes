@@ -2,6 +2,21 @@
 
 
 
+## v0.4.15 (2024-04-06)
+
+### Chore
+
+* chore(pre-commit.ci): auto fixes ([`8535a58`](https://github.com/Djelibeybi/aiolifx-themes/commit/8535a58921b42477a46926d804e8d8212630305a))
+
+* chore(ci): update PyPi task in release job
+
+Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`5519eb0`](https://github.com/Djelibeybi/aiolifx-themes/commit/5519eb0c24245c3796551733a636675d4c3efe9c))
+
+### Fix
+
+* fix(deps): update dependency aiolifx to v1.0.2 ([`a0b9166`](https://github.com/Djelibeybi/aiolifx-themes/commit/a0b9166c741634c7b9ddb1eb62a1d48d9001f6ec))
+
+
 ## v0.4.14 (2024-04-05)
 
 ### Fix
