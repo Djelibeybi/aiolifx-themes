@@ -2,6 +2,17 @@
 
 
 
+## v0.4.16 (2024-04-09)
+
+### Chore
+
+* chore(deps): update pre-commit hook pre-commit/pre-commit-hooks to v4.6.0 ([`a288d39`](https://github.com/Djelibeybi/aiolifx-themes/commit/a288d391e24ba67b663eea88e39ac36d9a34fda6))
+
+### Fix
+
+* fix(deps): update dependency typer to v0.12.2 ([`86a8594`](https://github.com/Djelibeybi/aiolifx-themes/commit/86a8594415baee1ef67bfe87c3782ca73a8dcfed))
+
+
 ## v0.4.15 (2024-04-06)
 
 ### Chore
