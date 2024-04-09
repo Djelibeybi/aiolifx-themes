@@ -2,6 +2,13 @@
 
 
 
+## v0.4.17 (2024-04-09)
+
+### Fix
+
+* fix(deps): update dependency typer to v0.12.3 ([`9098ac9`](https://github.com/Djelibeybi/aiolifx-themes/commit/9098ac905e653af2fab60a77c565234c350bad50))
+
+
 ## v0.4.16 (2024-04-09)
 
 ### Chore
