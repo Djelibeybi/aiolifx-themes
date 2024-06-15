@@ -2,6 +2,107 @@
 
 
 
+## v0.4.18 (2024-06-15)
+
+### Build
+
+* build(deps-dev): bump jinja2 from 3.1.3 to 3.1.4
+
+Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.3 to 3.1.4.
+- [Release notes](https://github.com/pallets/jinja/releases)
+- [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst)
+- [Commits](https://github.com/pallets/jinja/compare/3.1.3...3.1.4)
+
+---
+updated-dependencies:
+- dependency-name: jinja2
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`4cb8caa`](https://github.com/Djelibeybi/aiolifx-themes/commit/4cb8caa4e291e6aff8d520bb6fc21a22b9d82e96))
+
+* build(deps-dev): bump idna from 3.6 to 3.7
+
+Bumps [idna](https://github.com/kjd/idna) from 3.6 to 3.7.
+- [Release notes](https://github.com/kjd/idna/releases)
+- [Changelog](https://github.com/kjd/idna/blob/master/HISTORY.rst)
+- [Commits](https://github.com/kjd/idna/compare/v3.6...v3.7)
+
+---
+updated-dependencies:
+- dependency-name: idna
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`2aa1bd8`](https://github.com/Djelibeybi/aiolifx-themes/commit/2aa1bd82d9f8c52b20ccf4e99735d0dde8b71b2f))
+
+### Chore
+
+* chore(deps): update pre-commit hook pycqa/bandit to v1.7.9 ([`22edab6`](https://github.com/Djelibeybi/aiolifx-themes/commit/22edab6e3821d45d85b2d538c86bed3a8dc8a06c))
+
+* chore(deps): update pre-commit hook asottile/pyupgrade to v3.16.0 ([`10ed345`](https://github.com/Djelibeybi/aiolifx-themes/commit/10ed345d0c7ec4ff7f78ca82b109e1f44872128b))
+
+* chore(deps): update pre-commit hook codespell-project/codespell to v2.3.0 ([`e9797fe`](https://github.com/Djelibeybi/aiolifx-themes/commit/e9797fef34e29fde16b0a93c85b37e6d05e11d32))
+
+* chore(deps): update pre-commit hook commitizen-tools/commitizen to v3.27.0 ([`3266c81`](https://github.com/Djelibeybi/aiolifx-themes/commit/3266c81e7ded973f3a7d63c2bd4b8dc30ccbbdea))
+
+* chore(deps): update dependency pytest-asyncio to v0.23.7 ([`f57bb3d`](https://github.com/Djelibeybi/aiolifx-themes/commit/f57bb3ddf71a711561c30afc3071fffd9ecd2040))
+
+* chore(deps): update pre-commit hook commitizen-tools/commitizen to v3.26.0 ([`4523343`](https://github.com/Djelibeybi/aiolifx-themes/commit/4523343d6d19bda69e7859183ce14704b6079616))
+
+* chore(deps): update pre-commit hook commitizen-tools/commitizen to v3.25.1 ([`757c7e4`](https://github.com/Djelibeybi/aiolifx-themes/commit/757c7e455e88a59d7332b8ebf71f315dc526ad6c))
+
+* chore(deps): update dependency pre-commit to v3.7.1 ([`ad7b814`](https://github.com/Djelibeybi/aiolifx-themes/commit/ad7b81476922f515a5cc9e9a76ba52febd895813))
+
+* chore(deps): update pre-commit hook commitizen-tools/commitizen to v3.25.0 ([`cde5d53`](https://github.com/Djelibeybi/aiolifx-themes/commit/cde5d539ad49205fb7b1905b4d8008a7eeed783e))
+
+* chore(deps): update dependency myst-parser to v3.0.1 ([`057e8d7`](https://github.com/Djelibeybi/aiolifx-themes/commit/057e8d75254be69ff4ff1e76feccc380fd16f854))
+
+* chore(deps): update pre-commit hook psf/black to v24.4.2 ([`fd3544a`](https://github.com/Djelibeybi/aiolifx-themes/commit/fd3544a44ecb55d1f5137afa61c164e27a242b26))
+
+* chore(deps): update dependency black to v24.4.2 ([`d9db376`](https://github.com/Djelibeybi/aiolifx-themes/commit/d9db376a820b59d7d0e9908a772bf5020955b703))
+
+* chore(deps): update pre-commit hook pre-commit/mirrors-mypy to v1.10.0 ([`b6d0a87`](https://github.com/Djelibeybi/aiolifx-themes/commit/b6d0a8764247eec869651dee648e1757c1bdba31))
+
+* chore(deps): update pre-commit hook psf/black to v24.4.1 ([`edc04ff`](https://github.com/Djelibeybi/aiolifx-themes/commit/edc04ff13b92907d47c2da1865e78d879f934784))
+
+* chore(deps): update dependency black to v24.4.1 ([`1f32168`](https://github.com/Djelibeybi/aiolifx-themes/commit/1f3216894d744aafcbd5ca0f68fa4a135275b74e))
+
+* chore(deps): update dependency myst-parser to v3 ([`da23888`](https://github.com/Djelibeybi/aiolifx-themes/commit/da23888d4c6f2373872f37abc6079579689b9e81))
+
+* chore(deps): update dependency sphinx to v7.3.7 ([`0b8aa15`](https://github.com/Djelibeybi/aiolifx-themes/commit/0b8aa15daec58519d9b307fc58b3a20a75dfb1f6))
+
+* chore(deps): update pre-commit hook commitizen-tools/commitizen to v3.24.0 ([`8314175`](https://github.com/Djelibeybi/aiolifx-themes/commit/831417502990619f546f0ecd2d93a7bd955bed86))
+
+* chore(deps): update dependency sphinx to v7.3.6 ([`c8397bb`](https://github.com/Djelibeybi/aiolifx-themes/commit/c8397bba41131ab8bcbfff187190e6ec12e7deb3))
+
+* chore(deps): update dependency sphinx to v7.3.5 ([`f303293`](https://github.com/Djelibeybi/aiolifx-themes/commit/f3032938aaac354d05f98f97d5eefe2b720fe6fd))
+
+* chore(deps): update dependency sphinx to v7.3.2 ([`c4498cf`](https://github.com/Djelibeybi/aiolifx-themes/commit/c4498cfe01274704c7d737575b429701c702c46d))
+
+* chore(deps): update pre-commit hook psf/black to v24.4.0 ([`2a3ac7d`](https://github.com/Djelibeybi/aiolifx-themes/commit/2a3ac7d310c00617dcb05e4e4524692fa14229ea))
+
+* chore(deps): update dependency black to v24.4.0 ([`f9d9d06`](https://github.com/Djelibeybi/aiolifx-themes/commit/f9d9d06370f70bf7e05cb824082b2ddb95ff2d9b))
+
+* chore(deps): update pre-commit hook commitizen-tools/commitizen to v3.22.0 ([`73bca19`](https://github.com/Djelibeybi/aiolifx-themes/commit/73bca19987fd5bfac4b372b2b23c2379a8d2fe0a))
+
+* chore(deps): update wagoid/commitlint-github-action action to v6.0.1 ([`9ede079`](https://github.com/Djelibeybi/aiolifx-themes/commit/9ede079b12e81b7afa82e99675a6cf685cb613b7))
+
+### Fix
+
+* fix(deps): update dependency aiolifx to v1.0.3 ([`9092632`](https://github.com/Djelibeybi/aiolifx-themes/commit/90926323634913410b20b239f5658cd7199536fd))
+
+### Unknown
+
+* ---
+updated-dependencies:
+- dependency-name: requests
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`86f5a6f`](https://github.com/Djelibeybi/aiolifx-themes/commit/86f5a6f4bcfa4bd3122186e700dd3e15069be7bb))
+
+
 ## v0.4.17 (2024-04-09)
 
 ### Fix
