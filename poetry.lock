@@ -2,13 +2,13 @@
 
 [[package]]
 name = "aiolifx"
-version = "1.0.3"
+version = "1.0.4"
 description = "API for local communication with LIFX devices over a LAN with asyncio."
 optional = false
 python-versions = ">=3.4"
 files = [
-    {file = "aiolifx-1.0.3-py3-none-any.whl", hash = "sha256:5d97037026ec79ca156268d6982e25e93a1bcfbfaccdf0707e1b9c7bdedb8abf"},
-    {file = "aiolifx-1.0.3.tar.gz", hash = "sha256:2f375de143f2bb7fdabf128ed173c2148f338538c317bcf048a7fa44bd7f93d3"},
+    {file = "aiolifx-1.0.4-py3-none-any.whl", hash = "sha256:185cb3a5cb568491f7cc7e13767220be57f44483c43f63807821ec2f1b00615e"},
+    {file = "aiolifx-1.0.4.tar.gz", hash = "sha256:f048e6ce275cc483a81fef3ca4452e48999ba54df807c760cfd72cbe541ff0ab"},
 ]
 
 [package.dependencies]
@@ -1257,7 +1257,7 @@ files = [
 name = "urllib3"
 version = "2.2.2"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
-optional = false
+optional = true
 python-versions = ">=3.8"
 files = [
     {file = "urllib3-2.2.2-py3-none-any.whl", hash = "sha256:a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472"},
