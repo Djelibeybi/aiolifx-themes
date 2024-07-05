@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v0.4.20 (2024-07-05)
+
+### Fix
+
+* fix(docs): revert to ReadTheDocs compatible config
+
+Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`9b2775e`](https://github.com/Djelibeybi/aiolifx-themes/commit/9b2775ec22a3ba9ef025811c9834cbc8a9741b93))
+
 ## v0.4.19 (2024-07-05)
 
 ### Chore
