@@ -1,6 +1,31 @@
 # CHANGELOG
 
+## v0.4.19 (2024-07-05)
 
+### Chore
+
+* chore(deps): update pre-commit hook pre-commit/mirrors-mypy to v1.10.1 ([`8511f85`](https://github.com/Djelibeybi/aiolifx-themes/commit/8511f85f2c864be39ac6a4b27613067054cbbcbb))
+
+* chore(deps-dev): Bump urllib3 from 2.2.1 to 2.2.2
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.2.1 to 2.2.2.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/2.2.1...2.2.2)
+
+---
+updated-dependencies:
+- dependency-name: urllib3
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`5053651`](https://github.com/Djelibeybi/aiolifx-themes/commit/50536510c200afb7134b8bdf1f57dd8f30d4cb4b))
+
+* chore(deps): update pre-commit hook pycqa/flake8 to v7.1.0 ([`6e09c3c`](https://github.com/Djelibeybi/aiolifx-themes/commit/6e09c3c02d9d87d0afdf454b000e10d85b3e34fa))
+
+### Fix
+
+* fix(deps): update dependency aiolifx to v1.0.4 ([`2827478`](https://github.com/Djelibeybi/aiolifx-themes/commit/2827478d7735861af00b6060c867b15562b5151e))
 
 ## v0.4.18 (2024-06-15)
 
@@ -102,13 +127,11 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`86f5a6f`](https://github.com/Djelibeybi/aiolifx-themes/commit/86f5a6f4bcfa4bd3122186e700dd3e15069be7bb))
 
-
 ## v0.4.17 (2024-04-09)
 
 ### Fix
 
 * fix(deps): update dependency typer to v0.12.3 ([`9098ac9`](https://github.com/Djelibeybi/aiolifx-themes/commit/9098ac905e653af2fab60a77c565234c350bad50))
-
 
 ## v0.4.16 (2024-04-09)
 
@@ -119,7 +142,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`86f5a6f`](https://g
 ### Fix
 
 * fix(deps): update dependency typer to v0.12.2 ([`86a8594`](https://github.com/Djelibeybi/aiolifx-themes/commit/86a8594415baee1ef67bfe87c3782ca73a8dcfed))
-
 
 ## v0.4.15 (2024-04-06)
 
@@ -135,7 +157,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`5519eb0`](https://github.com/Djel
 
 * fix(deps): update dependency aiolifx to v1.0.2 ([`a0b9166`](https://github.com/Djelibeybi/aiolifx-themes/commit/a0b9166c741634c7b9ddb1eb62a1d48d9001f6ec))
 
-
 ## v0.4.14 (2024-04-05)
 
 ### Fix
@@ -143,7 +164,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`5519eb0`](https://github.com/Djel
 * fix: set minimum Python version to 3.12
 
 Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`6e75f6d`](https://github.com/Djelibeybi/aiolifx-themes/commit/6e75f6d31f9f16f9bc5a94f3a0e807899c547ab5))
-
 
 ## v0.4.13 (2024-04-05)
 
@@ -298,7 +318,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`77ae634`](https://github.com/Djel
 
 * fix(deps): update dependency typer to v0.9.1 ([`a4500ab`](https://github.com/Djelibeybi/aiolifx-themes/commit/a4500abf6c63e1abe0d9b9bccb0bf3e345fc20d6))
 
-
 ## v0.4.12 (2024-01-13)
 
 ### Build
@@ -364,13 +383,11 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`722c363`](https://g
 
 * fix(deps): update dependency aiolifx to v1.0.1 ([`af6335c`](https://github.com/Djelibeybi/aiolifx-themes/commit/af6335c757d7d6ff4165fe38b6856a8bf372c2a4))
 
-
 ## v0.4.11 (2023-11-28)
 
 ### Fix
 
 * fix(deps): update dependency sphinx-rtd-theme to v2 ([`ab078f6`](https://github.com/Djelibeybi/aiolifx-themes/commit/ab078f6f4ae8222ac4340100581bb46977bf1d71))
-
 
 ## v0.4.10 (2023-11-25)
 
@@ -480,7 +497,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`6bb409f`](https://github.com/Djel
 
 * fix(deps): update dependency aiolifx to v1 ([`e0ca95c`](https://github.com/Djelibeybi/aiolifx-themes/commit/e0ca95ca1778d314994f8117db6ee1849aed79ee))
 
-
 ## v0.4.9 (2023-09-14)
 
 ### Chore
@@ -513,7 +529,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`6bb409f`](https://github.com/Djel
 
 * fix(deps): update dependency sphinx to v7.2.6 ([`7a0db85`](https://github.com/Djelibeybi/aiolifx-themes/commit/7a0db85d32208bde3e596f04919fdeb5ea2c8268))
 
-
 ## v0.4.8 (2023-08-31)
 
 ### Chore
@@ -524,13 +539,11 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`6bb409f`](https://github.com/Djel
 
 * fix(deps): update dependency sphinx to v7.2.5 ([`1cbd8b3`](https://github.com/Djelibeybi/aiolifx-themes/commit/1cbd8b33c78f206dfcea125610aec3522fdeb789))
 
-
 ## v0.4.7 (2023-08-28)
 
 ### Fix
 
 * fix(deps): update dependency sphinx to v7.2.4 ([`0a9cdbe`](https://github.com/Djelibeybi/aiolifx-themes/commit/0a9cdbebdfc0f7f4c8d888201d933c26042480ba))
-
 
 ## v0.4.6 (2023-08-27)
 
@@ -733,13 +746,11 @@ This reverts commit a9b3075f38ad9d4f4d47f7618419a07376b808c4.
 
 Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`8f739de`](https://github.com/Djelibeybi/aiolifx-themes/commit/8f739dea5ee3b6b072aede420dc60e871b9b6c62))
 
-
 ## v0.4.5 (2023-03-15)
 
 ### Fix
 
 * fix(deps): update dependency sphinx-rtd-theme to v1.2.0 ([`4077abb`](https://github.com/Djelibeybi/aiolifx-themes/commit/4077abb2288ff6cb619d73620478887668c874ec))
-
 
 ## v0.4.4 (2023-03-15)
 
@@ -753,13 +764,11 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`8f739de`](https://github.com/Djel
 
 * fix(deps): update dependency aiolifx to v0.8.9 ([`c3fc4ec`](https://github.com/Djelibeybi/aiolifx-themes/commit/c3fc4ec3671a8f4b8511153487f8a0c776880b27))
 
-
 ## v0.4.3 (2023-03-07)
 
 ### Fix
 
 * fix(deps): update dependency myst-parser to v1 ([`9546f7e`](https://github.com/Djelibeybi/aiolifx-themes/commit/9546f7eea92b3a63cd19fb9526f11d836d4d2c84))
-
 
 ## v0.4.2 (2023-03-01)
 
@@ -822,7 +831,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`3962e84`](https://github.com/Djel
 
 Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`e414e40`](https://github.com/Djelibeybi/aiolifx-themes/commit/e414e4010f9fb7ebf8c55289172519d30b89c5f9))
 
-
 ## v0.4.1 (2022-12-27)
 
 ### Chore
@@ -845,7 +853,6 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`f445b3d`](https://github.com/Djelibeybi/aiolifx-themes/commit/f445b3d5bb04980a8b715a47fa7b7999b86bdfe9))
-
 
 ## v0.4.0 (2022-12-19)
 
@@ -874,7 +881,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`3f8de0e`](https://github.com/Djel
 Also more type and test fixes
 
 Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`126cdc1`](https://github.com/Djelibeybi/aiolifx-themes/commit/126cdc18c88b73831d65d28267290923cf1101b9))
-
 
 ## v0.3.0 (2022-12-12)
 
@@ -938,7 +944,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`0aa41cf`](https://github.com/Djel
 
 Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`7933391`](https://github.com/Djelibeybi/aiolifx-themes/commit/793339158df71ff936c092c5ab2fd360d9b7b2f3))
 
-
 ## v0.2.1 (2022-11-05)
 
 ### Chore
@@ -952,7 +957,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`7933391`](https://github.com/Djel
 ### Fix
 
 * fix(deps): update dependency typer to ^0.7.0 ([`72385cc`](https://github.com/Djelibeybi/aiolifx-themes/commit/72385ccc1be8954f826a06f6ac4298db610d2493))
-
 
 ## v0.2.0 (2022-10-27)
 
@@ -1009,7 +1013,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`695561b`](https://github.com/Djel
 
 * Merge branch &#39;add-credit-copyright&#39; ([`e2d50dd`](https://github.com/Djelibeybi/aiolifx-themes/commit/e2d50dde5e7cfa49e2b9710f749855e71b984813))
 
-
 ## v0.1.2 (2022-10-11)
 
 ### Chore
@@ -1021,7 +1024,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`695561b`](https://github.com/Djel
 * fix: make add_hsbk fault tolerant by providing default values
 
 Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`e7db7a8`](https://github.com/Djelibeybi/aiolifx-themes/commit/e7db7a87e02ff5d2733e7dd9da42cd1cc79daeb3))
-
 
 ## v0.1.1 (2022-10-10)
 
@@ -1060,7 +1062,6 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`fbc74c8`](https://github.com/Djel
 * refactor: achieve 100% code coverage
 
 Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`0d80df5`](https://github.com/Djelibeybi/aiolifx-themes/commit/0d80df52d7686d70f8549c04175f7197f165dbf6))
-
 
 ## v0.1.0 (2022-10-09)
 
