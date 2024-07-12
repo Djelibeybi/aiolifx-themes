@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.4.21 (2024-07-12)
+
+### Fix
+
+* fix(deps): update dependency aiolifx to v1.0.5 ([`14a52b8`](https://github.com/Djelibeybi/aiolifx-themes/commit/14a52b846e019c3afe570c4bddabe91a2b24eeb0))
+
 ## v0.4.20 (2024-07-05)
 
 ### Fix
@@ -990,11 +996,11 @@ Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`cda9994`](https://github.com/Djel
 
 * docs: add Delfick to the README.md and LICENSE file
 
-Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`92344af`](https://github.com/Djelibeybi/aiolifx-themes/commit/92344afc14368482588ec8ee031e915cde18ebae))
+Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`5c474e9`](https://github.com/Djelibeybi/aiolifx-themes/commit/5c474e9d448225230e8d12e3abd8a099b1b48449))
 
 * docs: add Delfick to the README.md and LICENSE file
 
-Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`5c474e9`](https://github.com/Djelibeybi/aiolifx-themes/commit/5c474e9d448225230e8d12e3abd8a099b1b48449))
+Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`92344af`](https://github.com/Djelibeybi/aiolifx-themes/commit/92344afc14368482588ec8ee031e915cde18ebae))
 
 ### Feature
 
