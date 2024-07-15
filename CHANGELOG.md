@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.4.25 (2024-07-15)
+
+### Fix
+
+* fix(deps): update dependency sphinx to v7.4.4 ([`ca6b990`](https://github.com/Djelibeybi/aiolifx-themes/commit/ca6b99000d5eef7c9877766a49e5326ee592b892))
+
 ## v0.4.24 (2024-07-15)
 
 ### Fix
