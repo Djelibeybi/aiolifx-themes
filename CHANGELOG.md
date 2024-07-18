@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v0.4.27 (2024-07-18)
+
+### Chore
+
+* chore(deps): update dependency pytest-asyncio to v0.23.8 ([`3d319fb`](https://github.com/Djelibeybi/aiolifx-themes/commit/3d319fb122988f47366298557b4c1b88f4d6636c))
+
+* chore(deps): update pre-commit hook commitizen-tools/commitizen to v3.28.0 ([`4533a86`](https://github.com/Djelibeybi/aiolifx-themes/commit/4533a862cae65dac3793b65a2b59de68a413840a))
+
+### Fix
+
+* fix(deps): update dependency sphinx to v7.4.6 ([`7ea207d`](https://github.com/Djelibeybi/aiolifx-themes/commit/7ea207d9317dd7ebae6a970bfc6a0d526c848af0))
+
 ## v0.4.26 (2024-07-17)
 
 ### Fix
