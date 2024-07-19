@@ -34,7 +34,7 @@ class MockMessage:
 class MockFailingLifxCommand:
     """Mock a lifx command that fails."""
 
-    def __init__(self, bulb: Light, **kwargs) -> None:
+    def __init__(self, bulb: Light) -> None:
         """Init command."""
         self.bulb = bulb
         self.calls: list[Any] = []
@@ -53,9 +53,7 @@ class MockFailingLifxCommand:
 class MockLifxCommand:
     """Mock a lifx command."""
 
-    def __name__(self):
-        """Return name."""
-        return "mock_lifx_command"
+    __name__ = "LIFX Command"
 
     def __init__(self, bulb: Light, **kwargs) -> None:
         """Init command."""
@@ -93,6 +91,10 @@ def _mocked_light() -> Light:
     light.get_color_zones = MockLifxCommand(light)
     light.set_extended_color_zones = MockLifxCommand(light)
     light.get_extended_color_zones = MockLifxCommand(light)
+    light.get64 = MockLifxCommand(light)
+    light.set64 = MockLifxCommand(light)
+    light.get_device_chain = MockLifxCommand(light)
+    light.get_tile_effect = MockLifxCommand(light)
     light.label = "LIFX Color"
     light.product = 22
     light.zones_count = 1
@@ -114,4 +116,86 @@ def _mocked_beam() -> Light:
     light.label = "LIFX Beam"
     light.product = 38
     light.zones_count = 71
+    return light
+
+
+def _mocked_tile() -> Light:
+    """Mock matrix light."""
+    light = _mocked_light()
+    light.label = "LIFX Tile"
+    light.product = 55
+    light.tile_device_width = 8
+    light.tile_devices = [
+        {
+            "accel_meas_x": 2250,
+            "accel_meas_y": 35,
+            "accel_meas_z": 82,
+            "user_x": 0.0,
+            "user_y": 1.0,
+            "width": 8,
+            "height": 8,
+            "device_version_vendor": 1,
+            "device_version_product": 55,
+            "firmware_build": 1548977726000000000,
+            "firmware_version_minor": 50,
+            "firmware_version_major": 3,
+        },
+        {
+            "accel_meas_x": 2085,
+            "accel_meas_y": -41,
+            "accel_meas_z": -1,
+            "user_x": 1.0,
+            "user_y": 1.0,
+            "width": 8,
+            "height": 8,
+            "device_version_vendor": 1,
+            "device_version_product": 55,
+            "firmware_build": 1548977726000000000,
+            "firmware_version_minor": 50,
+            "firmware_version_major": 3,
+        },
+        {
+            "accel_meas_x": 2328,
+            "accel_meas_y": -20,
+            "accel_meas_z": -125,
+            "user_x": 2.0,
+            "user_y": 1.0,
+            "width": 8,
+            "height": 8,
+            "device_version_vendor": 1,
+            "device_version_product": 55,
+            "firmware_build": 1548977726000000000,
+            "firmware_version_minor": 50,
+            "firmware_version_major": 3,
+        },
+        {
+            "accel_meas_x": -2198,
+            "accel_meas_y": -43,
+            "accel_meas_z": -116,
+            "user_x": 3.0,
+            "user_y": 1.0,
+            "width": 8,
+            "height": 8,
+            "device_version_vendor": 1,
+            "device_version_product": 55,
+            "firmware_build": 1548977726000000000,
+            "firmware_version_minor": 50,
+            "firmware_version_major": 3,
+        },
+        {
+            "accel_meas_x": 2227,
+            "accel_meas_y": -67,
+            "accel_meas_z": -54,
+            "user_x": 4.0,
+            "user_y": 1.0,
+            "width": 8,
+            "height": 8,
+            "device_version_vendor": 1,
+            "device_version_product": 55,
+            "firmware_build": 1548977726000000000,
+            "firmware_version_minor": 50,
+            "firmware_version_major": 3,
+        },
+    ]
+
     return light

@@ -1,23 +1,12 @@
-"""Tests for all ThemeColor methods."""
+# type: ignore
 
-from __future__ import annotations
-
-import asyncio
 from operator import contains
-import random
 from unittest.mock import MagicMock
 
 import pytest
 
-from aiolifx_themes.themes import (
-    LIFX_APP_THEMES,
-    Theme,
-    ThemeColor,
-    ThemeLibrary,
-    ThemePainter,
-)
-
-from . import _mocked_beam, _mocked_light, _mocked_z_strip  # type: ignore
+from aiolifx_themes.library import LIFX_APP_THEMES
+from aiolifx_themes.theme import Theme, ThemeColor
 
 THEME_NAMES = [name for name in LIFX_APP_THEMES]
 
@@ -31,7 +20,12 @@ def test_theme_color() -> None:
 
     rgb = MagicMock()
 
-    assert aqua.hsbk == (180, 1, 1, 3500)
+    assert (aqua.hue, aqua.saturation, aqua.brightness, aqua.kelvin) == (
+        180,
+        1,
+        1,
+        3500,
+    )
     assert aqua < blue
     assert aqua > coral
     assert hash(aqua) == -4899733196980317225
@@ -42,7 +36,8 @@ def test_theme_color() -> None:
         ("saturation", 1.0),
     )
 
-    assert aqua == aqua.clone()
+    aqua_clone = aqua.clone()
+    assert aqua == aqua_clone
 
     with pytest.raises(AssertionError):
         assert aqua == ("not", "a", "color")
@@ -63,10 +58,10 @@ def test_theme_color() -> None:
     assert kelvin_average.as_dict() == ThemeColor(0, 0, 43.75, 5125).as_dict()
 
     avg_colors = [
-        ThemeColor(60.0, 1.0, 0.25, 0),
-        ThemeColor(120.0, 1.0, 0.5, 0),
-        ThemeColor(180.0, 1.0, 0.75, 0),
-        ThemeColor(240.0, 1.0, 1.0, 0),
+        ThemeColor(60.0, 1.0, 0.25, 3500),
+        ThemeColor(120.0, 1.0, 0.5, 3500),
+        ThemeColor(180.0, 1.0, 0.75, 3500),
+        ThemeColor(240.0, 1.0, 1.0, 3500),
     ]
     brightness_average = ThemeColor.average(avg_colors)
     assert brightness_average.as_dict() == ThemeColor(150.0, 1.0, 0.625, 3500).as_dict()
@@ -90,81 +85,23 @@ def test_theme_methods() -> None:
     assert not contains(theme, red)
 
     test_colors = [
-        (0, 1, 1, 0),
-        (90, 1, 1, 0),
-        (180, 1, 1, 0),
-        (270, 1, 1, 0),
+        (0, 1, 1, 3500),
+        (90, 1, 1, 3500),
+        (180, 1, 1, 3500),
+        (270, 1, 1, 3500),
     ]
     test_theme = Theme()
     for hsbk in test_colors:
         test_theme.add_hsbk(*hsbk)
     assert len(test_theme) == 4
     assert test_theme.colors == [
-        (0, 65535, 65535, 0),
-        (16384, 65535, 65535, 0),
-        (32768, 65535, 65535, 0),
-        (49152, 65535, 65535, 0),
+        (0, 65535, 65535, 3500),
+        (16384, 65535, 65535, 3500),
+        (32768, 65535, 65535, 3500),
+        (49152, 65535, 65535, 3500),
     ]
 
     blank_theme = Theme()
     blank_theme.ensure_color()
     assert len(blank_theme) == 1
     assert blank_theme.colors[0] == (0, 0, 65535, 3500)
-
-
-def test_theme_library() -> None:
-    """Test the theme librarian."""
-    library = ThemeLibrary()
-    themes = library.themes
-    assert len(themes) == 42
-
-    for theme_name in ["exciting", "intense", "autumn", "stardust"]:
-        theme_colors = library.get_theme_colors(theme_name)
-        assert [color.as_dict() for color in theme_colors] == LIFX_APP_THEMES[
-            theme_name
-        ]
-
-    random_name, random_theme = library.get_random_theme()
-    random_theme_colors = random_theme.colors
-    color_names = [str(color) for color in random_theme]
-    assert len(color_names) == len(random_theme)
-    assert len(random_theme_colors) == len(color_names)
-
-    lifx_colors = [
-        ThemeColor(
-            color["hue"], color["saturation"], color["brightness"], int(color["kelvin"])
-        )
-        for color in LIFX_APP_THEMES[random_name]
-    ]
-    single_color = random.choice(lifx_colors)
-    assert isinstance(single_color, ThemeColor)
-    assert contains(random_theme, single_color)
-
-
-@pytest.mark.asyncio
-async def test_theme_painter() -> None:
-    """Test the theme painter."""
-    lights = [_mocked_light(), _mocked_z_strip(), _mocked_beam()]
-    library = ThemeLibrary()
-
-    theme = library.get_theme("dream")
-    painter = ThemePainter(asyncio.get_event_loop_policy().get_event_loop())
-    await painter.paint(theme, lights)
-
-    for light in lights:
-        if light.product == 38:
-            # only send a single set_extended_color_zone packet
-            assert len(light.set_extended_color_zones.calls) == 1
-        elif light.product == 31:
-            # send a packet for each zone
-            assert len(light.set_color_zones.calls) == light.zones_count
-            # packets in the sequence have apply=0 so they accumulate
-            assert (
-                light.set_color_zones.calls[round(light.zones_count / 2)][1]["apply"]
-                == 0
-            )
-            # the last packet has apply=1 set to trigger the paint
-            assert light.set_color_zones.calls[light.zones_count - 1][1]["apply"] == 1
-        elif light.product == 22:
-            # single zone bulbs get one packet too
-            assert len(light.set_color.calls) == 1
