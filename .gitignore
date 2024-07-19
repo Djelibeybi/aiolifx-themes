@@ -141,3 +141,8 @@ cython_debug/
 
 # Not ready yet
 example/
+
+# JetBrains IDEs
+.idea/
+
+# End of .gitignore
