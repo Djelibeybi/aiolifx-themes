@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## v0.4.28 (2024-07-24)
+
+### Chore
+
+* chore(pre-commit.ci): auto fixes ([`ad29a4c`](https://github.com/Djelibeybi/aiolifx-themes/commit/ad29a4ce6c1ec9290c4968fcb0e29c2d70e94aa6))
+
+* chore(pre-commit.ci): pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-mypy: v1.10.1 → v1.11.0](https://github.com/pre-commit/mirrors-mypy/compare/v1.10.1...v1.11.0) ([`1b12073`](https://github.com/Djelibeybi/aiolifx-themes/commit/1b12073e38cd0f91279b524f9909a90eb381250f))
+
+* chore: update .gitignore
+
+Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`32172c8`](https://github.com/Djelibeybi/aiolifx-themes/commit/32172c82a2f809a36f396e6594bd032e7ceca89e))
+
+### Fix
+
+* fix(deps): update dependency sphinx to v7.4.7 ([`bb36fd8`](https://github.com/Djelibeybi/aiolifx-themes/commit/bb36fd8679d491d239c11116482fa61b66846930))
+
 ## v0.4.27 (2024-07-18)
 
 ### Chore
