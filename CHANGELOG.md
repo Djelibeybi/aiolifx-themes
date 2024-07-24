@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v0.5.0 (2024-07-24)
+
+### Chore
+
+* chore(pre-commit.ci): auto fixes ([`4adb6cb`](https://github.com/Djelibeybi/aiolifx-themes/commit/4adb6cba9adb6d0ae7d8aaa50a41b07af5e13c41))
+
+### Feature
+
+* feat: add splotch painter for matrix devices
+
+Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`a0d65da`](https://github.com/Djelibeybi/aiolifx-themes/commit/a0d65da3b2b16f2524d69b4329702e3d9d6c70b3))
+
 ## v0.4.28 (2024-07-24)
 
 ### Chore
