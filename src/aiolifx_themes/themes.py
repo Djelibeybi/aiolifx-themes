@@ -1,7 +1,7 @@
 """Transitional placeholder to support the old method locations."""
 
-from .theme import Theme, ThemeColor
-from .library import ThemeLibrary, LIFX_APP_THEMES
+from .library import LIFX_APP_THEMES, ThemeLibrary
 from .painter import ThemePainter
+from .theme import Theme, ThemeColor
 
 __all__ = ["Theme", "ThemeColor", "ThemeLibrary", "LIFX_APP_THEMES", "ThemePainter"]

@@ -5,7 +5,7 @@ from __future__ import annotations
 import logging
 import random
 
-from .theme import ThemeColor, Theme
+from .theme import Theme, ThemeColor
 
 _LOGGER = logging.getLogger(__name__)
 
