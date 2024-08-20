@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## v0.5.2 (2024-08-20)
+
+### Chore
+
+* chore(deps): update pre-commit hook commitizen-tools/commitizen to v3.29.0 ([`dd7c478`](https://github.com/Djelibeybi/aiolifx-themes/commit/dd7c47801eed1d289ddf931d2b31d9000de1c7c4))
+
+* chore(deps): update wagoid/commitlint-github-action action to v6.0.2 ([`ecbd763`](https://github.com/Djelibeybi/aiolifx-themes/commit/ecbd763c5e3576fb8fe1c3dd4524d71527b271ad))
+
+* chore(deps): update pre-commit hook pycqa/flake8 to v7.1.1 ([`c8905d9`](https://github.com/Djelibeybi/aiolifx-themes/commit/c8905d9449eef6eb3e90e4838c7f524ef6d2c2c2))
+
+* chore(deps): update pre-commit hook psf/black to v24.8.0 ([`ccf82b0`](https://github.com/Djelibeybi/aiolifx-themes/commit/ccf82b0efaf71d9cf3c254a26cf29cc5e6a0e127))
+
+* chore(deps): update dependency black to v24.8.0 ([`920d662`](https://github.com/Djelibeybi/aiolifx-themes/commit/920d662caaf0ac7cd3f2f4c909d0e35c1ba6ab8e))
+
+* chore(deps): update snok/install-poetry action to v1.4.1 ([`ddcb40f`](https://github.com/Djelibeybi/aiolifx-themes/commit/ddcb40fa7c8e3006229e0f65b8863b213729056f))
+
+* chore(deps): update snok/install-poetry action to v1.4.0 ([`512a181`](https://github.com/Djelibeybi/aiolifx-themes/commit/512a1819369338a0433a966b324b53a36a6bb5b2))
+
+* chore(deps): update pre-commit hook pre-commit/mirrors-mypy to v1.11.1 ([`dad4f99`](https://github.com/Djelibeybi/aiolifx-themes/commit/dad4f99b3a86a53468539e79b39b646f6cdb88d5))
+
+* chore(deps): update pre-commit hook asottile/pyupgrade to v3.17.0 ([`53a0fab`](https://github.com/Djelibeybi/aiolifx-themes/commit/53a0fab260f3081b4ef6a85c9c834e03e864e6ad))
+
+* chore(deps): update dependency pre-commit to v3.8.0 ([`8d21746`](https://github.com/Djelibeybi/aiolifx-themes/commit/8d2174689977201bb8d44ff3464d907eaaefa0d4))
+
+### Fix
+
+* fix(deps): update dependency aiolifx to v1.0.8 ([`c26e05a`](https://github.com/Djelibeybi/aiolifx-themes/commit/c26e05a5b5497b0944a5598e7db599fefc32196e))
+
 ## v0.5.1 (2024-07-25)
 
 ### Fix
