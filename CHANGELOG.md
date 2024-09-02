@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v0.5.3 (2024-09-02)
+
+### Chore
+
+* chore(deps): update dependency rich to v13.8.0 ([`3729cb2`](https://github.com/Djelibeybi/aiolifx-themes/commit/3729cb23fbe4127d63620b0c5a25c599b60c8584))
+
+* chore(deps): update pre-commit hook pre-commit/mirrors-mypy to v1.11.2 ([`fb3032b`](https://github.com/Djelibeybi/aiolifx-themes/commit/fb3032b76395a63cf9ab0c1449cd35c3ade89edc))
+
+* chore(deps): update wagoid/commitlint-github-action action to v6.1.1 ([`4a455e3`](https://github.com/Djelibeybi/aiolifx-themes/commit/4a455e3d7f6b24bdb79e054458f95e316ffa379b))
+
+* chore(deps): update wagoid/commitlint-github-action action to v6.1.0 ([`f873aa7`](https://github.com/Djelibeybi/aiolifx-themes/commit/f873aa7c5f87c2162e6d944664f01c171b7106d5))
+
+### Fix
+
+* fix(deps): update dependency aiolifx to v1.0.9 ([`a69419f`](https://github.com/Djelibeybi/aiolifx-themes/commit/a69419ffbe664e017a8248732c138bc841ac547d))
+
 ## v0.5.2 (2024-08-20)
 
 ### Chore
