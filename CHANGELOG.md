@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.5.5 (2024-09-07)
+
+### Fix
+
+* fix(deps): update dependency aiolifx to v1.1.1 ([`366d06a`](https://github.com/Djelibeybi/aiolifx-themes/commit/366d06a24d71f036e1c0a1933616b4cc4d169735))
+
 ## v0.5.4 (2024-09-07)
 
 ### Chore
