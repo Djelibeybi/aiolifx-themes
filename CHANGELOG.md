@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v0.5.4 (2024-09-07)
+
+### Chore
+
+* chore(deps): update wagoid/commitlint-github-action action to v6.1.2 ([`6178eba`](https://github.com/Djelibeybi/aiolifx-themes/commit/6178ebaff758a42bac41b1b49e168302d33a9b8c))
+
+### Fix
+
+* fix: support multizone devices with more than 82 zones
+
+Signed-off-by: Avi Miller &lt;me@dje.li&gt; ([`09bd4ef`](https://github.com/Djelibeybi/aiolifx-themes/commit/09bd4ef913839396687ff48a3651a8855a9a6ab9))
+
 ## v0.5.3 (2024-09-02)
 
 ### Chore
