@@ -50,17 +50,13 @@ class ThemePainter:
                 colors = MultiZoneGenerator().get_theme_colors(theme, light.zones_count)
 
                 if supports_extended_multizone(light) is True:
-                    # Pad to 82 zones and send a single message
-                    for _ in range(len(colors), 82):
-                        colors.append((0, 0, 0, 3500))
-
                     tasks.append(
                         AwaitAioLIFX().wait(
                             partial(
                                 light.set_extended_color_zones,
                                 colors,
                                 light.zones_count,
-                                duration=duration,
+                                duration=int(duration * 1000),
                             )
                         )
                     )

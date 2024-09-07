@@ -4,13 +4,19 @@ import pytest
 
 from aiolifx_themes.themes import ThemeLibrary, ThemePainter
 
-from . import _mocked_beam, _mocked_light, _mocked_tile, _mocked_z_strip
+from . import _mocked_beam, _mocked_light, _mocked_neon, _mocked_tile, _mocked_z_strip
 
 
 @pytest.mark.asyncio
 async def test_theme_painter() -> None:
     """Test the theme painter."""
-    lights = [_mocked_light(), _mocked_z_strip(), _mocked_beam(), _mocked_tile()]
+    lights = [
+        _mocked_light(),
+        _mocked_z_strip(),
+        _mocked_beam(),
+        _mocked_neon(),
+        _mocked_tile(),
+    ]
     library = ThemeLibrary()
     theme = library.get_theme("dream")
 
