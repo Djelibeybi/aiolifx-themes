@@ -119,6 +119,15 @@ def _mocked_beam() -> Light:
     return light
 
 
+def _mocked_neon() -> Light:
+    """Mock longer extended multizone light."""
+    light = _mocked_light()
+    light.label = "LIFX Outdoor Neon Intl"
+    light.product = 162
+    light.zones_count = 120
+    return light
+
+
 def _mocked_tile() -> Light:
     """Mock matrix light."""
     light = _mocked_light()

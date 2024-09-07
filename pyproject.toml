@@ -30,7 +30,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.12"
-aiolifx = "^1.0.5"
+aiolifx = "^1.1.0"
 
 # Documentation Dependencies
 Sphinx = {version = "^7.0.0", optional = true}
