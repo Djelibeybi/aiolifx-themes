@@ -2,17 +2,17 @@
 
 [[package]]
 name = "aiolifx"
-version = "1.1.1"
+version = "1.1.2"
 description = "API for local communication with LIFX devices over a LAN with asyncio."
 optional = false
 python-versions = ">=3.4"
 files = [
-    {file = "aiolifx-1.1.1-py3-none-any.whl", hash = "sha256:b6ad157f5890ab5af5962c54f3044e63a71d9232c19fe3638e1eeb8d9d17c5b3"},
-    {file = "aiolifx-1.1.1.tar.gz", hash = "sha256:a19a6adaa500b6a0da461816f526db418f73f3556aaea5e144b9a968fb68f7e0"},
+    {file = "aiolifx-1.1.2-py3-none-any.whl", hash = "sha256:34246c6433053d05816b4749a1ee6c20360b4de47e6a4a2394cfb7f38fee5fba"},
+    {file = "aiolifx-1.1.2.tar.gz", hash = "sha256:33889ff5e4911bbe78e0e6958f71d7b6f3963e6d6683c373e5d87a9e5d21c7ee"},
 ]
 
 [package.dependencies]
-async-timeout = ">=3.0.1"
+async_timeout = ">=3.0.1"
 bitstring = "*"
 click = ">=8.1.0,<8.2.0"
 ifaddr = "*"
