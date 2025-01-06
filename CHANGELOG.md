@@ -1,6 +1,42 @@
 # CHANGELOG
 
 
+## v0.6.0 (2025-01-06)
+
+### Chores
+
+- **deps**: Update dependency windows-curses to v2.4.0
+  ([`b7c8c7a`](https://github.com/Djelibeybi/aiolifx-themes/commit/b7c8c7a7a81f61aafa4ce92a7169b5d8603d9858))
+
+- **deps**: Update pre-commit hook asottile/pyupgrade to v3.19.1
+  ([#416](https://github.com/Djelibeybi/aiolifx-themes/pull/416),
+  [`070f519`](https://github.com/Djelibeybi/aiolifx-themes/commit/070f519e015646082359dd9c667d6dad750aa599))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook pre-commit/mirrors-mypy to v1.14.0
+  ([#417](https://github.com/Djelibeybi/aiolifx-themes/pull/417),
+  [`e1dc273`](https://github.com/Djelibeybi/aiolifx-themes/commit/e1dc2731a82eb05433f15d4f58b469cb23318a1f))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook pre-commit/mirrors-mypy to v1.14.1
+  ([#418](https://github.com/Djelibeybi/aiolifx-themes/pull/418),
+  [`7aee127`](https://github.com/Djelibeybi/aiolifx-themes/commit/7aee1274d9faf8b06e25fda4dc574069eb11cd5a))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update wagoid/commitlint-github-action action to v6.2.0
+  ([`f2ee23a`](https://github.com/Djelibeybi/aiolifx-themes/commit/f2ee23a77302d0898def031487270fb8eb11adfc))
+
+### Features
+
+- Update christmas and kwanzaa theme colours to match LIFX app
+  ([`f87e00a`](https://github.com/Djelibeybi/aiolifx-themes/commit/f87e00a7e53c98d33d69a2363ec643ff317d51ab))
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+
 ## v0.5.8 (2024-12-14)
 
 ### Bug Fixes
