@@ -73,11 +73,10 @@ LIFX_APP_THEMES = {
         ThemeColor(hue=282, saturation=0.9, brightness=0.67, kelvin=3500),
     ],
     "christmas": [
-        ThemeColor(hue=0.0, saturation=0.75, brightness=0.902, kelvin=3500),
-        ThemeColor(hue=120.0, saturation=0.75, brightness=0.902, kelvin=3500),
-        ThemeColor(hue=15.0, saturation=0.5, brightness=0.902, kelvin=3500),
-        ThemeColor(hue=120.0, saturation=1.0, brightness=0.902, kelvin=6500),
-        ThemeColor(hue=0.0, saturation=1.0, brightness=0.902, kelvin=3500),
+        ThemeColor(hue=120.0, saturation=1.0, brightness=1.0, kelvin=6500),
+        ThemeColor(hue=0.0, saturation=1.0, brightness=1.0, kelvin=3500),
+        ThemeColor(hue=15.0, saturation=1.0, brightness=1.0, kelvin=3500),
+        ThemeColor(hue=120.0, saturation=0.75, brightness=1.0, kelvin=3500),
     ],
     "dream": [
         ThemeColor(hue=201, saturation=0.76, brightness=0.23, kelvin=3500),
@@ -183,8 +182,8 @@ LIFX_APP_THEMES = {
         ThemeColor(hue=307.0, saturation=0.16, brightness=0.9019, kelvin=3500),
     ],
     "kwanzaa": [
-        ThemeColor(hue=120.0, saturation=1.0, brightness=0.902, kelvin=3500),
-        ThemeColor(hue=0.0, saturation=1.0, brightness=0.902, kelvin=3500),
+        ThemeColor(hue=120.0, saturation=1.0, brightness=1.0, kelvin=3500),
+        ThemeColor(hue=0.0, saturation=1.0, brightness=1.0, kelvin=3500),
     ],
     "mellow": [
         ThemeColor(hue=359, saturation=0.31, brightness=0.59, kelvin=3500),
