@@ -85,6 +85,7 @@ def _mocked_light() -> Light:
     light.power_level = 0
     light.fire_and_forget = AsyncMock()
     light.try_sending = AsyncMock()
+    light.set_power = MockLifxCommand(light)
     light.set_color = MockLifxCommand(light)
     light.get_version = MockLifxCommand(light)
     light.set_color_zones = MockLifxCommand(light)
