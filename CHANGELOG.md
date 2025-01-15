@@ -1,6 +1,26 @@
 # CHANGELOG
 
 
+## v0.6.2 (2025-01-15)
+
+### Bug Fixes
+
+- Move dev dependencies to dev group
+  ([`a666922`](https://github.com/Djelibeybi/aiolifx-themes/commit/a666922f046eebebffc63694b2868e9eacdb3f35))
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+### Chores
+
+- **deps**: Downgrade pytest to 8.2 and pytest-asyncio to 0.24
+  ([`d73c69c`](https://github.com/Djelibeybi/aiolifx-themes/commit/d73c69c70e301626676b29056b3c02bf0da3107c))
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+- **deps**: Update dependency pytest-asyncio to ^0.25.0
+  ([`e0e38d2`](https://github.com/Djelibeybi/aiolifx-themes/commit/e0e38d25009d18bcafbabdc1a3620308a58145f7))
+
+
 ## v0.6.1 (2025-01-15)
 
 ### Bug Fixes
