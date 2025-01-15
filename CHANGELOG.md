@@ -1,6 +1,65 @@
 # CHANGELOG
 
 
+## v0.6.1 (2025-01-15)
+
+### Bug Fixes
+
+- Theme painter duration corrected and single bulb support fixed
+  ([`5f5272c`](https://github.com/Djelibeybi/aiolifx-themes/commit/5f5272c731b0f0fd0455613e6cf8c381156b71be))
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+### Chores
+
+- **ci**: Update workflow to Python 3.13
+  ([`aeeba9d`](https://github.com/Djelibeybi/aiolifx-themes/commit/aeeba9d7e467fed217b08984a5aebc63201ba739))
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+- **deps**: Bump jinja2 from 3.1.4 to 3.1.5
+  ([`8993979`](https://github.com/Djelibeybi/aiolifx-themes/commit/8993979a17d9325624bd9304b5e40b03c7d15e3c))
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+- **deps**: Update dependencies pytest and pytest-asyncio
+  ([`0ab6d86`](https://github.com/Djelibeybi/aiolifx-themes/commit/0ab6d863488914d1241f0f4f498a227007fb3722))
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+- **deps**: Update pre-commit hook pycqa/bandit to v1.8.2
+  ([#423](https://github.com/Djelibeybi/aiolifx-themes/pull/423),
+  [`8470632`](https://github.com/Djelibeybi/aiolifx-themes/commit/84706329d3725b851c56de15e9532be202d6e115))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update wagoid/commitlint-github-action action to v6.2.1
+  ([`cc25dd1`](https://github.com/Djelibeybi/aiolifx-themes/commit/cc25dd1c007efc5168da116c43dfdc8bb327c398))
+
+- **deps-dev**: Bump virtualenv from 20.26.3 to 20.26.6
+  ([`703ee8d`](https://github.com/Djelibeybi/aiolifx-themes/commit/703ee8d7184f256ac8b5f66d6c4ece2284e85978))
+
+Bumps [virtualenv](https://github.com/pypa/virtualenv) from 20.26.3 to 20.26.6. - [Release
+  notes](https://github.com/pypa/virtualenv/releases) -
+  [Changelog](https://github.com/pypa/virtualenv/blob/main/docs/changelog.rst) -
+  [Commits](https://github.com/pypa/virtualenv/compare/20.26.3...20.26.6)
+
+--- updated-dependencies: - dependency-name: virtualenv dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+### Continuous Integration
+
+- Add tests for new power_on parameter
+  ([`13f804a`](https://github.com/Djelibeybi/aiolifx-themes/commit/13f804a0cbb6b9d3d0cb78762c8b79de334f6b4d))
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+
 ## v0.6.0 (2025-01-06)
 
 ### Chores
