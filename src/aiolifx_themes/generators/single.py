@@ -12,14 +12,8 @@ class SingleGenerator:
         """Initialize the applier."""
         self.theme = theme
 
-    def get_theme_color(self) -> dict[str, int]:
-        """Apply a color from the theme to the light."""
+    def get_theme_color(self) -> tuple[int, int, int, int]:
+        """Return a single color from the theme to the light."""
         theme = self.theme.shuffled()
         theme.ensure_color()
-        color = theme.random().as_tuple()
-        return {
-            "hue": color[0],
-            "saturation": color[1],
-            "brightness": color[2],
-            "kelvin": color[3],
-        }
+        return theme.random().as_tuple()
