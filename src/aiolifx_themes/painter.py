@@ -26,12 +26,25 @@ class ThemePainter:
         self._loop = loop or asyncio.get_event_loop()
 
     async def paint(
-        self, theme: Theme, lights: list[Light], duration: float = 0.25
+        self,
+        theme: Theme,
+        lights: list[Light],
+        duration: float = 0.25,
+        power_on: bool = False,
     ) -> None:
         """Paint theme using a light-specific painter."""
 
         tasks = []
         for light in lights:
+            if power_on:
+                tasks.append(
+                    AwaitAioLIFX().wait(
+                        partial(
+                            light.set_power, value="on", duration=int(duration * 1000)
+                        )
+                    )
+                )
+
             if is_single(light):
                 color = SingleGenerator(theme).get_theme_color()
                 tasks.append(
@@ -39,7 +52,7 @@ class ThemePainter:
                         partial(
                             light.set_color,
                             value=color,
-                            duration=duration,
+                            duration=int(duration * 1000),
                         )
                     )
                 )
@@ -73,7 +86,7 @@ class ThemePainter:
                                     index,
                                     color,
                                     apply=apply,
-                                    duration=int(duration),
+                                    duration=int(duration * 1000),
                                 )
                             )
                         )
@@ -94,6 +107,8 @@ class ThemePainter:
                     colors = [color.as_tuple() for color in theme_colors]
 
                     # set64 has no reply so no need to await it.
-                    light.set64(tile_index, 0, 0, 8, duration=duration, colors=colors)
+                    light.set64(
+                        tile_index, 0, 0, 8, duration=int(duration), colors=colors
+                    )
 
         await asyncio.gather(*tasks, return_exceptions=True)
