@@ -41,3 +41,7 @@ async def test_theme_painter() -> None:
             assert len(light.set_color.calls) == 1
         elif light.product == 55:
             assert len(light.set64.calls) == 5
+
+    await ThemePainter().paint(theme, lights, duration=1, power_on=True)
+    for light in lights:
+        assert len(light.set_power.calls) == 1
