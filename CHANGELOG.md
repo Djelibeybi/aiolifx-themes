@@ -1,6 +1,16 @@
 # CHANGELOG
 
 
+## v0.6.3 (2025-01-16)
+
+### Bug Fixes
+
+- Restore support for Python 3.12
+  ([`e98ccc9`](https://github.com/Djelibeybi/aiolifx-themes/commit/e98ccc90cbef7067c0ee9b627a7f293f8705deac))
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+
 ## v0.6.2 (2025-01-15)
 
 ### Bug Fixes
