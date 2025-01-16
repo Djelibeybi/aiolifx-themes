@@ -1,6 +1,16 @@
 # CHANGELOG
 
 
+## v0.6.4 (2025-01-16)
+
+### Bug Fixes
+
+- Remove Python upper bound
+  ([`739c800`](https://github.com/Djelibeybi/aiolifx-themes/commit/739c800a29dc0bf24db3a7b977ccea192bcefe46))
+
+Signed-off-by: Avi Miller <me@dje.li>
+
+
 ## v0.6.3 (2025-01-16)
 
 ### Bug Fixes
