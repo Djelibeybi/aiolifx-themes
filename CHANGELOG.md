@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v0.6.5 (2025-01-20)
+
+### Bug Fixes
+
+- **deps**: Update dependency aiolifx to v1.1.3
+  ([#431](https://github.com/Djelibeybi/aiolifx-themes/pull/431),
+  [`2735c99`](https://github.com/Djelibeybi/aiolifx-themes/commit/2735c99016d24e10d603c8922825be3da54de06a))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+
 ## v0.6.4 (2025-01-16)
 
 ### Bug Fixes
