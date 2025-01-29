@@ -184,7 +184,7 @@ class Canvas:
             distances.append(((x - i) ** 2 + (y - j) ** 2, color))
 
         def get_key(
-            dc: tuple[int, ThemeColor]
+            dc: tuple[int, ThemeColor],
         ) -> tuple[int, tuple[float, float, float, int]]:
             return (
                 dc[0],
