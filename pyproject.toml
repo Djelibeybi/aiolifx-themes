@@ -51,7 +51,7 @@ pytest-cov = "^6.0.0"
 pre-commit = "^4.0.0"
 pytest-asyncio = "^0.25.0"
 async-timeout = "^5.0.0"
-black = "^24.4.2"
+black = "^25.0.0"
 rich = "^13.7.1"
 windows-curses = [{ platform = "windows", version = "^2.3.3" }]
 
