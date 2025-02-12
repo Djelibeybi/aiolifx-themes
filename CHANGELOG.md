@@ -1,6 +1,79 @@
 # CHANGELOG
 
 
+## v0.6.6 (2025-02-12)
+
+### Bug Fixes
+
+- **deps**: Update dependency myst-parser to v4.0.1
+  ([#443](https://github.com/Djelibeybi/aiolifx-themes/pull/443),
+  [`3c216d6`](https://github.com/Djelibeybi/aiolifx-themes/commit/3c216d6c7183500f8cd7cf62312fea48158a4e86))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+### Chores
+
+- **deps**: Update dependency black to v25
+  ([`754645d`](https://github.com/Djelibeybi/aiolifx-themes/commit/754645d380190c93440225135dc3e3b57760844c))
+
+- **deps**: Update dependency pre-commit to v4.1.0
+  ([#432](https://github.com/Djelibeybi/aiolifx-themes/pull/432),
+  [`e62ca6b`](https://github.com/Djelibeybi/aiolifx-themes/commit/e62ca6b5b1c0159954076f532465978cc0960296))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update dependency pytest-asyncio to v0.25.3
+  ([#436](https://github.com/Djelibeybi/aiolifx-themes/pull/436),
+  [`8075b1c`](https://github.com/Djelibeybi/aiolifx-themes/commit/8075b1c2fdcb5764eabad3df270e812dbffbd00c))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook codespell-project/codespell to v2.4.0
+  ([#433](https://github.com/Djelibeybi/aiolifx-themes/pull/433),
+  [`11f3706`](https://github.com/Djelibeybi/aiolifx-themes/commit/11f3706bd553289e79cf72383242e98ecfb3a772))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook codespell-project/codespell to v2.4.1
+  ([#437](https://github.com/Djelibeybi/aiolifx-themes/pull/437),
+  [`da90f7b`](https://github.com/Djelibeybi/aiolifx-themes/commit/da90f7b557a01b1636702c175ef5964e5da0a8fb))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.1.1
+  ([#434](https://github.com/Djelibeybi/aiolifx-themes/pull/434),
+  [`4045998`](https://github.com/Djelibeybi/aiolifx-themes/commit/4045998bde72232e494175edf349ad825148e1e0))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.2.0
+  ([#441](https://github.com/Djelibeybi/aiolifx-themes/pull/441),
+  [`42e2cfa`](https://github.com/Djelibeybi/aiolifx-themes/commit/42e2cfa8b5b8b31cfa210bae776c01d9f5153cc7))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.2.1
+  ([#442](https://github.com/Djelibeybi/aiolifx-themes/pull/442),
+  [`e6e9182`](https://github.com/Djelibeybi/aiolifx-themes/commit/e6e9182589eca693443521a47d9d02d55227e144))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook pre-commit/mirrors-mypy to v1.15.0
+  ([#440](https://github.com/Djelibeybi/aiolifx-themes/pull/440),
+  [`4a58796`](https://github.com/Djelibeybi/aiolifx-themes/commit/4a587969eee125fa12ab92c681957ce6a8f14187))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook psf/black to v25
+  ([`c19076f`](https://github.com/Djelibeybi/aiolifx-themes/commit/c19076fff3863a5018b34d5bbfa4be9564b4e5fc))
+
+- **deps**: Update pre-commit hook pycqa/isort to v6
+  ([`4279732`](https://github.com/Djelibeybi/aiolifx-themes/commit/42797324ae840b3b401d704bb951be5ee7687be8))
+
+- **pre-commit.ci**: Auto fixes
+  ([`ee9f986`](https://github.com/Djelibeybi/aiolifx-themes/commit/ee9f986c33d75fde685aa528f41d9a5c4d7ae757))
+
+
 ## v0.6.5 (2025-01-20)
 
 ### Bug Fixes
@@ -95,9 +168,7 @@ Bumps [virtualenv](https://github.com/pypa/virtualenv) from 20.26.3 to 20.26.6. 
   [Changelog](https://github.com/pypa/virtualenv/blob/main/docs/changelog.rst) -
   [Commits](https://github.com/pypa/virtualenv/compare/20.26.3...20.26.6)
 
---- updated-dependencies: - dependency-name: virtualenv dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: virtualenv dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -509,9 +580,7 @@ Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.2.1 to 2.2.2. - [Rele
   [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst) -
   [Commits](https://github.com/urllib3/urllib3/compare/2.2.1...2.2.2)
 
---- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -533,9 +602,7 @@ Bumps [idna](https://github.com/kjd/idna) from 3.6 to 3.7. - [Release
   [Changelog](https://github.com/kjd/idna/blob/master/HISTORY.rst) -
   [Commits](https://github.com/kjd/idna/compare/v3.6...v3.7)
 
---- updated-dependencies: - dependency-name: idna dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: idna dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -547,9 +614,7 @@ Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.3 to 3.1.4. - [Release
   [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst) -
   [Commits](https://github.com/pallets/jinja/compare/3.1.3...3.1.4)
 
---- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -914,9 +979,7 @@ Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.2 to 3.1.3. - [Release
   [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst) -
   [Commits](https://github.com/pallets/jinja/compare/3.1.2...3.1.3)
 
---- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1008,9 +1071,7 @@ Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.0.4 to 2.0.6. - [Rele
   [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst) -
   [Commits](https://github.com/urllib3/urllib3/compare/2.0.4...2.0.6)
 
---- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1022,9 +1083,7 @@ Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.0.6 to 2.0.7. - [Rele
   [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst) -
   [Commits](https://github.com/urllib3/urllib3/compare/2.0.6...2.0.7)
 
---- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1208,9 +1267,7 @@ Bumps [requests](https://github.com/psf/requests) from 2.28.1 to 2.31.0. - [Rele
   [Changelog](https://github.com/psf/requests/blob/main/HISTORY.md) -
   [Commits](https://github.com/psf/requests/compare/v2.28.1...v2.31.0)
 
---- updated-dependencies: - dependency-name: requests dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: requests dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1513,9 +1570,7 @@ Bumps [markdown-it-py](https://github.com/executablebooks/markdown-it-py) from 2
   [Changelog](https://github.com/executablebooks/markdown-it-py/blob/master/CHANGELOG.md) -
   [Commits](https://github.com/executablebooks/markdown-it-py/compare/v2.1.0...v2.2.0)
 
---- updated-dependencies: - dependency-name: markdown-it-py dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: markdown-it-py dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1585,9 +1640,7 @@ Bumps [setuptools](https://github.com/pypa/setuptools) from 65.4.1 to 65.5.1. - 
   [Changelog](https://github.com/pypa/setuptools/blob/main/CHANGES.rst) -
   [Commits](https://github.com/pypa/setuptools/compare/v65.4.1...v65.5.1)
 
---- updated-dependencies: - dependency-name: setuptools dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: setuptools dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1644,9 +1697,7 @@ Bumps [certifi](https://github.com/certifi/python-certifi) from 2022.9.24 to 202
   notes](https://github.com/certifi/python-certifi/releases) -
   [Commits](https://github.com/certifi/python-certifi/compare/2022.09.24...2022.12.07)
 
---- updated-dependencies: - dependency-name: certifi dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: certifi dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
