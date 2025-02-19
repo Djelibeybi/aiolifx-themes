@@ -1,6 +1,37 @@
 # CHANGELOG
 
 
+## v0.6.7 (2025-02-19)
+
+### Bug Fixes
+
+- **deps**: Update dependency sphinx to v8.2.0
+  ([#447](https://github.com/Djelibeybi/aiolifx-themes/pull/447),
+  [`2cffd0d`](https://github.com/Djelibeybi/aiolifx-themes/commit/2cffd0d2d5b966a65598ea220a6bbc4a36aed68b))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+### Chores
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.2.2
+  ([#446](https://github.com/Djelibeybi/aiolifx-themes/pull/446),
+  [`8eaf397`](https://github.com/Djelibeybi/aiolifx-themes/commit/8eaf397b59947b27d535dd6cb21fc890ad02a0cc))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook pycqa/bandit to v1.8.3
+  ([#445](https://github.com/Djelibeybi/aiolifx-themes/pull/445),
+  [`9576e8e`](https://github.com/Djelibeybi/aiolifx-themes/commit/9576e8ec4730d9120e6289cea17233eed5246b8b))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook pycqa/flake8 to v7.1.2
+  ([#444](https://github.com/Djelibeybi/aiolifx-themes/pull/444),
+  [`29e9a5c`](https://github.com/Djelibeybi/aiolifx-themes/commit/29e9a5cd1333185cdc8e4ab15cfe59d43c3c1d68))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+
 ## v0.6.6 (2025-02-12)
 
 ### Bug Fixes
