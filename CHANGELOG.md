@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v0.6.8 (2025-02-22)
+
+### Bug Fixes
+
+- **deps**: Update dependency sphinx to v8.2.1
+  ([#448](https://github.com/Djelibeybi/aiolifx-themes/pull/448),
+  [`a614fff`](https://github.com/Djelibeybi/aiolifx-themes/commit/a614fffe372f14d5a540ccbac21e89317d461675))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+
 ## v0.6.7 (2025-02-19)
 
 ### Bug Fixes
