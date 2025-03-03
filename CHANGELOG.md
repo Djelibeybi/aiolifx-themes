@@ -1,6 +1,43 @@
 # CHANGELOG
 
 
+## v0.6.9 (2025-03-03)
+
+### Bug Fixes
+
+- **deps**: Update dependency sphinx to v8.2.3
+  ([#453](https://github.com/Djelibeybi/aiolifx-themes/pull/453),
+  [`bfdba73`](https://github.com/Djelibeybi/aiolifx-themes/commit/bfdba73687d9199b0fc8eabf14c6419820680efb))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+### Chores
+
+- **deps**: Update dependency pytest to v8.3.5
+  ([#451](https://github.com/Djelibeybi/aiolifx-themes/pull/451),
+  [`46a7630`](https://github.com/Djelibeybi/aiolifx-themes/commit/46a7630aa96171a3096899afd7ef2c6aee72b351))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.3.0
+  ([#450](https://github.com/Djelibeybi/aiolifx-themes/pull/450),
+  [`e1d206f`](https://github.com/Djelibeybi/aiolifx-themes/commit/e1d206fc425a3a307e6c0a7c4f1934089337b595))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.4.1
+  ([#452](https://github.com/Djelibeybi/aiolifx-themes/pull/452),
+  [`6b039c8`](https://github.com/Djelibeybi/aiolifx-themes/commit/6b039c8f82252dcf7ea1b1ad1ddb5df5358695f0))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook pycqa/isort to v6.0.1
+  ([#449](https://github.com/Djelibeybi/aiolifx-themes/pull/449),
+  [`7e34e92`](https://github.com/Djelibeybi/aiolifx-themes/commit/7e34e924e556471e45f2141a8cc41691258720e6))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+
 ## v0.6.8 (2025-02-22)
 
 ### Bug Fixes
