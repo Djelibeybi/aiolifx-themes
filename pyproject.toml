@@ -52,7 +52,7 @@ pre-commit = "^4.0.0"
 pytest-asyncio = "^0.26.0"
 async-timeout = "^5.0.0"
 black = "^25.0.0"
-rich = "^13.7.1"
+rich = "^14.0.0"
 windows-curses = [{ platform = "windows", version = "^2.3.3" }]
 
 [tool.semantic_release]
