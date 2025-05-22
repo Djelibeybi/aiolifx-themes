@@ -1,6 +1,124 @@
 # CHANGELOG
 
 
+## v0.6.11 (2025-05-22)
+
+### Bug Fixes
+
+- **deps**: Update dependency aiolifx to v1.1.5
+  ([#473](https://github.com/Djelibeybi/aiolifx-themes/pull/473),
+  [`d14ee23`](https://github.com/Djelibeybi/aiolifx-themes/commit/d14ee2356f59095f8960bf4bd1f237e078ac73ae))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+### Chores
+
+- **deps**: Bump jinja2 from 3.1.5 to 3.1.6
+  ([`7820398`](https://github.com/Djelibeybi/aiolifx-themes/commit/782039813ead69e94a09b1965a85c9169c27edd3))
+
+Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.5 to 3.1.6. - [Release
+  notes](https://github.com/pallets/jinja/releases) -
+  [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst) -
+  [Commits](https://github.com/pallets/jinja/compare/3.1.5...3.1.6)
+
+--- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Update dependency pre-commit to v4.2.0
+  ([#456](https://github.com/Djelibeybi/aiolifx-themes/pull/456),
+  [`6592fa4`](https://github.com/Djelibeybi/aiolifx-themes/commit/6592fa4eacab21d2f0e0717be3dfd881ae0c904e))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update dependency pytest-asyncio to ^0.26.0
+  ([#457](https://github.com/Djelibeybi/aiolifx-themes/pull/457),
+  [`8d7f6ea`](https://github.com/Djelibeybi/aiolifx-themes/commit/8d7f6eaac5efeee4d96939ea052bdfd5bd58ced4))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update dependency pytest-cov to v6.1.0
+  ([#460](https://github.com/Djelibeybi/aiolifx-themes/pull/460),
+  [`e78328f`](https://github.com/Djelibeybi/aiolifx-themes/commit/e78328fa4756a502ad7adcb6e25ba87a0e7424cb))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update dependency pytest-cov to v6.1.1
+  ([#462](https://github.com/Djelibeybi/aiolifx-themes/pull/462),
+  [`0662b6a`](https://github.com/Djelibeybi/aiolifx-themes/commit/0662b6a4f9b15db48177923361a75ede7c266af9))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update dependency rich to v14
+  ([`561b5ef`](https://github.com/Djelibeybi/aiolifx-themes/commit/561b5ef438670c3f00e60ca19f89348a065676c4))
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.5.0
+  ([#461](https://github.com/Djelibeybi/aiolifx-themes/pull/461),
+  [`d5f0551`](https://github.com/Djelibeybi/aiolifx-themes/commit/d5f055148f6cfd94be9185effe7ad81e9525c406))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.5.1
+  ([#463](https://github.com/Djelibeybi/aiolifx-themes/pull/463),
+  [`f7b033e`](https://github.com/Djelibeybi/aiolifx-themes/commit/f7b033e8d09a49d6c4bf4091e6bb6901765e9831))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.6.0
+  ([#464](https://github.com/Djelibeybi/aiolifx-themes/pull/464),
+  [`ff2124c`](https://github.com/Djelibeybi/aiolifx-themes/commit/ff2124c016dd750c38c868e18cc9b3eccb3abd7c))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.6.1
+  ([#465](https://github.com/Djelibeybi/aiolifx-themes/pull/465),
+  [`782f0ea`](https://github.com/Djelibeybi/aiolifx-themes/commit/782f0eab347199a2cbad080efde79614f635b42a))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.6.2
+  ([#466](https://github.com/Djelibeybi/aiolifx-themes/pull/466),
+  [`d00c341`](https://github.com/Djelibeybi/aiolifx-themes/commit/d00c341554f3524263d73e42dfc26a7cd57efe33))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.6.3
+  ([`2dd55d0`](https://github.com/Djelibeybi/aiolifx-themes/commit/2dd55d076ef625dc94e6d69e7b96143f1e29c5d3))
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.7.0
+  ([#468](https://github.com/Djelibeybi/aiolifx-themes/pull/468),
+  [`3058d49`](https://github.com/Djelibeybi/aiolifx-themes/commit/3058d4969e5ed4db6e07cefdc77c97a7fe8fa19c))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.7.1
+  ([#469](https://github.com/Djelibeybi/aiolifx-themes/pull/469),
+  [`72d27e1`](https://github.com/Djelibeybi/aiolifx-themes/commit/72d27e11471da8eb2ba1d994ea11d2412ceaa386))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.7.2
+  ([#470](https://github.com/Djelibeybi/aiolifx-themes/pull/470),
+  [`9fd7840`](https://github.com/Djelibeybi/aiolifx-themes/commit/9fd78409c14997d8aebdc62df0230acedc3f80b0))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.8.0
+  ([`5508f07`](https://github.com/Djelibeybi/aiolifx-themes/commit/5508f0746b1b8da0bd4869ba807c539a2d2ed6b6))
+
+- **deps**: Update pre-commit hook commitizen-tools/commitizen to v4.8.2
+  ([#472](https://github.com/Djelibeybi/aiolifx-themes/pull/472),
+  [`85c514a`](https://github.com/Djelibeybi/aiolifx-themes/commit/85c514a6e3d9cae8d544bbab1ad60b84568917a0))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+- **deps**: Update pre-commit hook pycqa/flake8 to v7.2.0
+  ([#458](https://github.com/Djelibeybi/aiolifx-themes/pull/458),
+  [`43f90df`](https://github.com/Djelibeybi/aiolifx-themes/commit/43f90df3730f963fee6dfbc47b922e1046726681))
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+
 ## v0.6.10 (2025-03-06)
 
 ### Bug Fixes
