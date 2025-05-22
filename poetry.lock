@@ -2,14 +2,14 @@
 
 [[package]]
 name = "aiolifx"
-version = "1.1.4"
+version = "1.1.5"
 description = "API for local communication with LIFX devices over a LAN with asyncio."
 optional = false
 python-versions = ">=3.4"
 groups = ["main"]
 files = [
-    {file = "aiolifx-1.1.4-py3-none-any.whl", hash = "sha256:f0a012937318e542fdc72bf279d962d572ab6f69fe1598520c13f1ee5dd93cbf"},
-    {file = "aiolifx-1.1.4.tar.gz", hash = "sha256:ed3ee71e69cad592e82208ba7bc555aeae8d54098beed562f85ffa1b70328764"},
+    {file = "aiolifx-1.1.5-py3-none-any.whl", hash = "sha256:6fc72752813dd3babcf97bf747181bc747c9948aa0f5c2466f488c2a0de21554"},
+    {file = "aiolifx-1.1.5.tar.gz", hash = "sha256:29151ef2a9ffde360ac602afa8f780ea85d91772187d10417ed5b18cb85efe8c"},
 ]
 
 [package.dependencies]
