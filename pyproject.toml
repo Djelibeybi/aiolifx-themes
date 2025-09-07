@@ -59,7 +59,7 @@ windows-curses = [{ platform = "windows", version = "^2.3.3" }]
 branch = "main"
 version_toml = ["pyproject.toml:tool.poetry.version"]
 version_variables = ["src/aiolifx_themes/__init__.py:__version__"]
-build_command = "poetry build"
+build_command = "pip install poetry && poetry build"
 
 [tool.pytest.ini_options]
 addopts = "-v -Wdefault --cov=aiolifx_themes --cov-report=term-missing:skip-covered"
