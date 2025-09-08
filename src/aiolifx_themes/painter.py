@@ -94,12 +94,17 @@ class ThemePainter:
             if is_matrix(light):
                 # Paint a matrix light
                 await AwaitAioLIFX().wait(light.get_device_chain)
+
                 coords_and_sizes = [
                     ((tile["user_x"], tile["user_y"]), (tile["width"], tile["height"]))
                     for tile in light.tile_devices
                 ]
 
                 generator = MatrixGenerator.from_user_coords(coords_and_sizes)
+
+                framebuffer = 0
+                if light.tile_device_width == 16:
+                    framebuffer = 1
 
                 for tile_index, theme_colors in enumerate(
                     generator.get_theme_colors(theme)
@@ -108,7 +113,42 @@ class ThemePainter:
 
                     # set64 has no reply so no need to await it.
                     light.set64(
-                        tile_index, 0, 0, 8, duration=int(duration), colors=colors
+                        tile_index=tile_index,
+                        length=1,
+                        fb_index=framebuffer,
+                        x=0,
+                        y=0,
+                        width=light.tile_device_width,
+                        duration=int(duration) if framebuffer == 0 else 0,
+                        colors=colors[:64],
                     )
+
+                    # LIFX Ceiling Capsules have 8 rows of 16 zones and require two set64
+                    # messages to fill the entire tile.
+                    if light.tile_device_width == 16 and len(colors) == 128:
+                        light.set64(
+                            tile_index=tile_index,
+                            length=1,
+                            fb_index=framebuffer,
+                            x=0,
+                            y=4,
+                            width=light.tile_device_width,
+                            duration=int(duration) if framebuffer == 0 else 0,
+                            colors=colors[64:],
+                        )
+
+                    if framebuffer == 1:
+                        light.copy_frame_buffer(
+                            tile_index=tile_index,
+                            src_fb_index=1,
+                            dst_fb_index=0,
+                            src_x=0,
+                            src_y=0,
+                            dst_x=0,
+                            dst_y=0,
+                            width=light.tile_device_width,
+                            height=8,
+                            duration=int(duration),
+                        )
 
         await asyncio.gather(*tasks, return_exceptions=True)
