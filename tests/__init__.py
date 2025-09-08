@@ -96,6 +96,7 @@ def _mocked_light() -> Light:
     light.set64 = MockLifxCommand(light)
     light.get_device_chain = MockLifxCommand(light)
     light.get_tile_effect = MockLifxCommand(light)
+    light.copy_frame_buffer = MockLifxCommand(light)
     light.label = "LIFX Color"
     light.product = 22
     light.zones_count = 1
@@ -126,6 +127,56 @@ def _mocked_neon() -> Light:
     light.label = "LIFX Outdoor Neon Intl"
     light.product = 162
     light.zones_count = 120
+    return light
+
+
+def _mocked_ceiling() -> Light:
+    """Mock Ceiling light."""
+    light = _mocked_light()
+    light.label = "LIFX Ceiling"
+    light.product = 177
+    light.tile_device_width = 8
+    light.tile_devices = [
+        {
+            "accel_meas_x": 0,
+            "accel_meas_y": 0,
+            "accel_meas_z": 2000,
+            "device_version_product": 176,
+            "device_version_vendor": 1,
+            "firmware_build": 1729829374000000000,
+            "firmware_version_major": 4,
+            "firmware_version_minor": 10,
+            "height": 8,
+            "user_x": 0.0,
+            "user_y": 0.0,
+            "width": 8,
+        }
+    ]
+    return light
+
+
+def _mocked_ceiling_capsule() -> Light:
+    """Mock Ceiling Capsule light."""
+    light = _mocked_light()
+    light.label = "LIFX Ceiling Capsule"
+    light.product = 201
+    light.tile_device_width = 16
+    light.tile_devices = [
+        {
+            "accel_meas_x": 0,
+            "accel_meas_y": 0,
+            "accel_meas_z": 2000,
+            "device_version_product": 201,
+            "device_version_vendor": 1,
+            "firmware_build": 1753699325000000000,
+            "firmware_version_major": 4,
+            "firmware_version_minor": 112,
+            "height": 8,
+            "user_x": 0.0,
+            "user_y": 0.0,
+            "width": 16,
+        }
+    ]
     return light
 
 

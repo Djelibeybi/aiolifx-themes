@@ -4,7 +4,15 @@ import pytest
 
 from aiolifx_themes.themes import ThemeLibrary, ThemePainter
 
-from . import _mocked_beam, _mocked_light, _mocked_neon, _mocked_tile, _mocked_z_strip
+from . import (
+    _mocked_beam,
+    _mocked_ceiling,
+    _mocked_ceiling_capsule,
+    _mocked_light,
+    _mocked_neon,
+    _mocked_tile,
+    _mocked_z_strip,
+)
 
 
 @pytest.mark.asyncio
@@ -15,6 +23,8 @@ async def test_theme_painter() -> None:
         _mocked_z_strip(),
         _mocked_beam(),
         _mocked_neon(),
+        _mocked_ceiling(),
+        _mocked_ceiling_capsule(),
         _mocked_tile(),
     ]
     library = ThemeLibrary()
@@ -41,6 +51,15 @@ async def test_theme_painter() -> None:
             assert len(light.set_color.calls) == 1
         elif light.product == 55:
             assert len(light.set64.calls) == 5
+        elif light.product == 176:
+            assert len(light.set64.calls) == 1
+        elif light.product == 201:
+            assert len(light.set64.calls) == 2
+            assert len(light.copy_frame_buffer.calls) == 1
+
+    # Reset mock calls for power_on test
+    for light in lights:
+        light.set_power.reset_mock()
 
     await ThemePainter().paint(theme, lights, duration=1, power_on=True)
     for light in lights:
