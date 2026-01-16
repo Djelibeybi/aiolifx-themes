@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aiolifx-themes"
-version = "1.0.2"
+version = "1.0.3"
 description = "Async library that applies color themes to LIFX lights"
 authors = ["Avi Miller <me@dje.li>"]
 license = "MIT"
