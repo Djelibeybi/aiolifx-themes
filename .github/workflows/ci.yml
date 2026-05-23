@@ -17,10 +17,10 @@ jobs:
     name: Lint commit messages
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
           fetch-depth: 0
-      - uses: wagoid/commitlint-github-action@v6.2.1
+      - uses: wagoid/commitlint-github-action@b948419dd99f3fd78a6548d48f94e3df7f6bf3ed # v6.2.1
 
   test:
     strategy:
@@ -36,12 +36,12 @@ jobs:
       OS: ${{ matrix.os }}
       PYTHON_VERSION: ${{ matrix.python-version }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
         with:
           python-version: ${{ matrix.python-version }}
-      - uses: snok/install-poetry@v1.4.1
+      - uses: snok/install-poetry@76e04a911780d5b312d89783f7b1cd627778900a # v1.4.1
       - name: Install dependencies
         run: poetry install
         shell: bash
@@ -49,7 +49,7 @@ jobs:
         run: poetry run pytest --cov-report=xml
         shell: bash
       - name: Upload coverage report to Codecov
-        uses: codecov/codecov-action@v6
+        uses: codecov/codecov-action@e79a6962e0d4c0c17b229090214935d2e33f8354 # v6
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           env_vars: OS, PYTHON_VERSION
@@ -70,18 +70,18 @@ jobs:
       - commitlint
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
         with:
           python-version: "3.14"
 
       - name: Install Poetry
-        uses: snok/install-poetry@v1.4.1
+        uses: snok/install-poetry@76e04a911780d5b312d89783f7b1cd627778900a # v1.4.1
 
       - name: Install dependencies using Poetry
         run: poetry install
@@ -89,19 +89,19 @@ jobs:
 
       - name: Run Python Semantic Release
         id: release
-        uses: python-semantic-release/python-semantic-release@v10.5.3
+        uses: python-semantic-release/python-semantic-release@350c48fcb3ffcdfd2e0a235206bc2ecea6b69df0 # v10.5.3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
 
       - name: Publish package distributions to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
+        uses: pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b # release/v1
         if: steps.release.outputs.released == 'true'
         with:
           verbose: true
           print-hash: true
 
       - name: Publish package distributions to GitHub Releases
-        uses: python-semantic-release/publish-action@main
+        uses: python-semantic-release/publish-action@310a9983a0ae878b29f3aac778d7c77c1db27378 # main
         if: steps.release.outputs.released == 'true'
         with:
           github_token: ${{ secrets.GH_TOKEN }}
