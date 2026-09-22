@@ -101,7 +101,7 @@ jobs:
           print-hash: true
 
       - name: Publish package distributions to GitHub Releases
-        uses: python-semantic-release/publish-action@6d89e2de8d40ecb3717316ecbbf15a6fa8ea9039 # main
+        uses: python-semantic-release/publish-action@9c35d910de0678fd677fe57125d04a50559c1e65 # main
         if: steps.release.outputs.released == 'true'
         with:
           github_token: ${{ secrets.GH_TOKEN }}
