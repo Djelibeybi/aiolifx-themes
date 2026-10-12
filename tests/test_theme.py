@@ -8,7 +8,7 @@ import pytest
 from aiolifx_themes.library import LIFX_APP_THEMES
 from aiolifx_themes.theme import Theme, ThemeColor
 
-THEME_NAMES = [name for name in LIFX_APP_THEMES]
+THEME_NAMES = [*LIFX_APP_THEMES]
 
 
 def test_theme_color() -> None:
