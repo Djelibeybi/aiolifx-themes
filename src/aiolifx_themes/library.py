@@ -20,7 +20,7 @@ class ThemeLibrary:
     @property
     def themes(self) -> list[str]:
         """Returns a list of names of the themes in the library."""
-        return [name for name in self._themes]
+        return [*self._themes]
 
     def get_theme(self, theme_name: str) -> Theme:
         """Returns the named theme from the library or a blank theme."""
@@ -32,7 +32,7 @@ class ThemeLibrary:
 
     def get_theme_colors(self, theme_name: str) -> list[ThemeColor]:
         """Return a list of colors for the named theme or neutral white."""
-        return [color for color in self._themes.get(theme_name, [])]
+        return [*self._themes.get(theme_name, [])]
 
     def get_random_theme(self) -> tuple[str, Theme]:
         """Returns a random theme from the library."""
